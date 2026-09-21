@@ -1,0 +1,53 @@
+{
+  "sectionTitle": "Gambaran Umum",
+  "video": {
+    "title": "",
+    "src": "",
+    "poster": ""
+  },
+  "facts": {
+    "items": [
+      {
+        "value": "2012",
+        "label": "Sejak"
+      },
+      {
+        "value": "",
+        "label": "RSGM Milik Sendiri"
+      },
+      {
+        "value": ">450",
+        "label": "Alumni"
+      },
+      {
+        "value": "",
+        "label": "Mitra Kerjasama Nasional & Internasional"
+      },
+      {
+        "value": "",
+        "label": "Program Magister Kedokteran Gigi"
+      }
+    ]
+  },
+  "sekilas": {
+    "title": "Program Studi Profesi Dokter Gigi FKKG UNPRI",
+    "subtitle": "Where Knowledge Becomes Professional Practice",
+    "paragraphs": [
+      "Program Studi Profesi Dokter Gigi FKKG UNPRI merupakan tahap pendidikan profesi yang melanjutkan pembelajaran dari jenjang Sarjana Kedokteran Gigi menuju pembentukan Dokter Gigi yang kompeten, profesional, beretika, dan berorientasi pada kebutuhan pasien serta masyarakat.",
+      "Pada tahap ini, mahasiswa tidak hanya memperdalam ilmu yang telah diperoleh sebelumnya, tetapi mulai **mengintegrasikan pengetahuan dengan pengalaman klinis nyata**. Melalui proses pembelajaran yang terstruktur dan pendampingan dosen serta pembimbing klinik, mahasiswa mengembangkan kemampuan dalam melakukan pemeriksaan, menentukan diagnosis, menyusun rencana perawatan, melakukan tindakan klinis sesuai kompetensi, hingga mengevaluasi hasil perawatan.",
+      "Pendidikan Profesi di FKKG UNPRI dirancang sebagai perjalanan pembelajaran yang menghubungkan *knowledge, clinical skills, critical thinking, communication, ethics, and empathy*. Setiap kasus klinis menjadi kesempatan bagi mahasiswa untuk belajar mengambil keputusan secara bertanggung jawab dan berbasis bukti. Setiap interaksi dengan pasien menjadi ruang untuk mengembangkan komunikasi, empati, serta profesionalisme. Dan setiap tantangan menjadi bagian dari proses membangun kompetensi dan kepercayaan diri sebagai calon Dokter Gigi.",
+      "Pembelajaran juga diarahkan agar mahasiswa mampu mengikuti perkembangan ilmu pengetahuan dan teknologi kedokteran gigi. Di tengah transformasi pelayanan kesehatan, mahasiswa didorong untuk mengenal dan beradaptasi dengan perkembangan *digital dentistry*, teknologi diagnostik, *evidence-based dentistry*, serta berbagai inovasi yang terus membentuk masa depan profesi dokter gigi. Seorang dokter gigi juga dituntut untuk memiliki integritas, empati, kemampuan berkomunikasi, kolaborasi, profesionalisme, serta komitmen terhadap keselamatan dan kepentingan pasien. Oleh karena itu, Program Studi Profesi Dokter Gigi FKKG UNPRI menghadirkan proses pendidikan yang tidak hanya berfokus pada keterampilan klinis, tetapi juga pada pembentukan karakter profesional dan semangat untuk terus belajar sepanjang hayat. Kami percaya bahwa kompetensi terbaik lahir dari perpaduan antara ilmu yang kuat, keterampilan yang terlatih, teknologi yang relevan, dan kepedulian terhadap sesama.",
+      "Program Studi Profesi Dokter Gigi FKKG UNPRI menjadi bagian penting dalam perjalanan mahasiswa dari seorang **Sarjana Kedokteran Gigi menuju dokter gigi profesional** yang siap menghadapi perkembangan dunia kedokteran gigi dan memberikan kontribusi nyata bagi peningkatan kesehatan gigi dan mulut masyarakat. Di sinilah pengetahuan menjadi pengalaman, keterampilan berkembang menjadi kompetensi, dan proses belajar tumbuh menjadi sebuah tanggung jawab profesi."
+    ],
+    "closing": "Shape Smiles. Shape the Future — Your Future has Smiles."
+  },
+  "akreditasi": {
+    "title": "Akreditasi & Sertifikasi",
+    "label": "Akreditasi",
+    "status": "Unggul",
+    "note": "",
+    "subtitle": "Sertifikasi",
+    "certificates": [],
+    "placeholder": "Sertifikat dan pengakuan akan ditampilkan di sini."
+  }
+}

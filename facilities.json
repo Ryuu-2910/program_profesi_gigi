@@ -1,0 +1,22 @@
+{
+  "sectionTitle": "Sarana Prasarana",
+  "title": "Explore Our Dental Facilities",
+  "intro": "",
+  "paragraphs": [
+    "Program Studi Profesi Kedokteran Gigi Universitas Prima Indonesia didukung oleh sarana dan prasarana yang dirancang untuk menghadirkan pengalaman pembelajaran klinis yang optimal. UNPRI memiliki **Rumah Sakit Gigi dan Mulut (RSGM) PRIMA milik sendiri** sebagai wahana utama pendidikan profesi, yang dilengkapi dengan **50 dental unit** serta berbagai fasilitas penunjang pembelajaran dan pelayanan kedokteran gigi.",
+    "Lingkungan klinis yang representatif memungkinkan mahasiswa belajar, berlatih, dan mengembangkan keterampilan profesional secara langsung dalam suasana pelayanan kesehatan yang nyata. Didukung fasilitas modern dan ekosistem pendidikan yang terintegrasi, mahasiswa dipersiapkan untuk tumbuh menjadi **dokter gigi yang kompeten, profesional, adaptif, dan siap menghadapi dunia pelayanan kesehatan masa kini.**"
+  ],
+  "items": [],
+  "picture": {
+    "image": "./images/sarana prasarana/image fasilitas.JPG",
+    "title": ""
+  },
+  "video": {
+    "src": "./videos/Sarana Prasarana/video fasilitas.mp4",
+    "image": "",
+    "title": "SARANA PRASARANA VIDEO"
+  },
+  "blocksTitle": "Keterangan Sarana",
+  "blocks": [],
+  "placeholder": "Foto dan video fasilitas akan ditampilkan di sini."
+}

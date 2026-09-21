@@ -1,0 +1,152 @@
+{
+  "sectionTitle": "Struktural & Dosen",
+  "kaprodi": {
+    "title": "Ketua Program Studi",
+    "photo": "images/dosen/01-shieny-lokanata.jpg",
+    "name": "drg. Shieny Lokanata, M.Biomed",
+    "role": "Ketua Program Studi Profesi Kedokteran Gigi FKKG UNPRI",
+    "closing": "",
+    "paragraphs": [
+      "Sebagai Kaprodi Profesi Kedokteran Gigi FKKG Universitas Prima Indonesia, **drg. Shieny Lokanata, M.Biomed** mengemban peran strategis dalam mengarahkan penyelenggaraan pendidikan profesi yang unggul, berintegritas, dan responsif terhadap perkembangan ilmu pengetahuan serta teknologi kedokteran gigi.",
+      "Di bawah kepemimpinannya, Program Studi Profesi Kedokteran Gigi FKKG UNPRI terus mendorong terciptanya proses pendidikan yang tidak hanya menekankan pencapaian kompetensi klinis, tetapi juga membentuk karakter profesional, kepemimpinan, kemampuan komunikasi, serta kepedulian terhadap kebutuhan kesehatan gigi dan mulut masyarakat. Beliau juga berkomitmen membangun lingkungan akademik yang kolaboratif, disiplin, inovatif, dan berorientasi pada mutu. Sinergi antara dosen, mahasiswa, tenaga kependidikan, serta wahana pendidikan klinik terus diperkuat sebagai bagian dari upaya menghasilkan lulusan yang tidak hanya terampil secara klinis, tetapi juga memiliki integritas, tanggung jawab, empati, serta kemampuan beradaptasi dengan dinamika pelayanan kesehatan modern.",
+      "**drg. Shieny Lokanata, M.Biomed** membawa semangat untuk menjadikan Program Studi Profesi Kedokteran Gigi FKKG UNPRI sebagai ruang pembelajaran yang membentuk calon dokter gigi secara utuh — **kompeten dalam pelayanan, unggul dalam profesionalisme, adaptif terhadap perubahan, dan berdedikasi bagi masyarakat.** Dengan semangat tersebut, Program Studi Profesi Kedokteran Gigi UNPRI terus melangkah dalam mempersiapkan generasi dokter gigi yang mampu menghadapi tantangan profesi masa depan sekaligus memberikan kontribusi nyata bagi peningkatan kualitas kesehatan gigi dan mulut di Indonesia."
+    ]
+  },
+  "narasi": {
+    "title": "Meet Our Dental Educators",
+    "paragraphs": [
+      "Kualitas pendidikan profesi tidak terlepas dari kualitas para pendidik yang mendampingi setiap proses pembelajaran. **Program Studi Profesi Kedokteran Gigi FKKG Universitas Prima Indonesia Medan** didukung oleh dosen-dosen yang memiliki kompetensi akademik dan klinis, termasuk **dokter gigi spesialis dari delapan departemen bidang ilmu Kedokteran Gigi**.",
+      "Kehadiran para dosen spesialis dari berbagai disiplin keilmuan memberikan pengalaman belajar yang komprehensif bagi mahasiswa. Setiap mahasiswa memperoleh pendampingan dalam mengintegrasikan pengetahuan ilmiah, keterampilan klinis, penalaran diagnostik, perencanaan perawatan, serta pengambilan keputusan klinis secara sistematis dan bertanggung jawab. Proses pendidikan tidak hanya diarahkan pada kemampuan melakukan tindakan, tetapi juga pada pemahaman terhadap dasar ilmiah, keselamatan pasien, etika profesi, dan kualitas pelayanan.",
+      "Dengan pengalaman akademik dan praktik klinis yang dimiliki, para dosen berperan sebagai **pendidik, pembimbing klinis, mentor, sekaligus teladan profesional** bagi mahasiswa. Interaksi yang intensif dalam lingkungan pendidikan klinik memungkinkan terjadinya proses transfer pengetahuan dan pengalaman secara langsung, sehingga mahasiswa dapat berkembang melalui pembelajaran berbasis kasus nyata dan berbagai situasi klinis yang relevan.",
+      "Kolaborasi antarbidang ilmu juga menjadi bagian penting dalam pendidikan profesi di UNPRI. Melalui pendekatan multidisiplin, mahasiswa dibimbing untuk melihat kondisi kesehatan gigi dan mulut pasien secara menyeluruh, menyusun rencana perawatan yang tepat, serta memahami pentingnya koordinasi dan kolaborasi dalam memberikan pelayanan yang berorientasi pada kebutuhan pasien.",
+      "Lebih dari sekadar mengajarkan keterampilan klinis, para dosen turut membentuk **integritas, kedisiplinan, empati, kemampuan komunikasi, dan profesionalisme** calon dokter gigi. Dengan dukungan tenaga pendidik yang kompeten dari delapan departemen keilmuan, UNPRI berkomitmen menghadirkan pendidikan profesi yang kuat secara akademik, relevan secara klinis, dan berorientasi pada mutu pelayanan."
+    ]
+  },
+  "title": "Dosen Program Studi",
+  "intro": "",
+  "sectionLabel": "Dosen Tetap",
+  "placeholder": "Daftar dosen akan ditampilkan di sini.",
+  "departments": [
+    {
+      "name": "Departemen Prostodonsia",
+      "lecturers": [
+        {
+          "name": "drg. Wennie Fransisca, Sp.Pros, FICD",
+          "photo": "images/dosen/02-wennie-fransisca.jpg"
+        },
+        {
+          "name": "drg. Sumitro, Sp.Pros",
+          "photo": "images/dosen/03-sumitro.jpg"
+        },
+        {
+          "name": "drg. Kriswandy Putra, Sp.Pros",
+          "photo": "images/dosen/04-kriswandy-putra.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Departemen Konservasi Gigi",
+      "lecturers": [
+        {
+          "name": "drg. Dian Soraya Tanjung, Sp.KG",
+          "photo": "images/dosen/05-dian-soraya-tanjung.jpg"
+        },
+        {
+          "name": "drg. Member Reni Purba, Sp.KG",
+          "photo": "images/dosen/06-member-reni-purba.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Departemen Ilmu Penyakit Mulut",
+      "lecturers": [
+        {
+          "name": "drg. Fitri Dona Siregar, Sp.PM",
+          "photo": "images/dosen/07-fitri-dona-siregar.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Departemen Ortodonsia",
+      "lecturers": [
+        {
+          "name": "drg. Davin, Sp.Ort",
+          "photo": "images/dosen/08-davin.jpg"
+        },
+        {
+          "name": "drg. Siti Harlianti Putri Tarigan, Sp.Ort",
+          "photo": "images/dosen/09-siti-harlianti-putri-tarigan.jpg"
+        },
+        {
+          "name": "drg. Lina Hadi, Sp.Ort",
+          "photo": "images/dosen/10-lina-hadi.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Departemen Periodonsia",
+      "lecturers": [
+        {
+          "name": "drg. Yulia Karen, Sp.Perio",
+          "photo": "images/dosen/11-yulia-karen.jpg"
+        },
+        {
+          "name": "drg. Vandersun Lestari, Sp.Perio",
+          "photo": "images/dosen/12-vandersun-lestari.jpg"
+        },
+        {
+          "name": "drg. Aisyah Bella Azzanjani, Sp.Perio",
+          "photo": "images/dosen/13-aisyah-bella-azzanjani.jpg"
+        },
+        {
+          "name": "Dr. drg. Chandra Susanto, Sp.Perio",
+          "photo": "images/dosen/14-chandra-susanto.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Departemen Odontologi Forensik",
+      "lecturers": [
+        {
+          "name": "Dr. drg. Susanto, M.Kes",
+          "photo": "images/dosen/15-susanto.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Departemen Radiologi Dental",
+      "lecturers": [
+        {
+          "name": "drg. Yudhi Gustianto, Sp.R.K.G",
+          "photo": "images/dosen/16-yudhi-gustianto.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Departemen Ilmu Kesehatan Gigi Masyarakat",
+      "lecturers": [
+        {
+          "name": "Dr. drg. Suci Erawati, M.Kes",
+          "photo": "images/dosen/17-suci-erawati.jpg"
+        },
+        {
+          "name": "drg. Idamawati, MKM",
+          "photo": "images/dosen/18-idamawati.jpg"
+        },
+        {
+          "name": "drg. Mangatas H P Hutagalung, M.Kes",
+          "photo": "images/dosen/19-mangatas-h-p-hutagalung.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Departemen Bedah Mulut",
+      "lecturers": [
+        {
+          "name": "drg. Afifuddin, Sp.BM",
+          "photo": "images/dosen/20-afifuddin.jpg"
+        }
+      ]
+    }
+  ]
+}

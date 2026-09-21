@@ -1,0 +1,40 @@
+{
+  "sectionTitle": "Temu Pakar Kedokteran Gigi",
+  "videos": [
+    {
+      "src": "./videos/TemuPakar/Dr_Jose_Aranguren_Cangas_DDS_MSc.mp4",
+      "image": "",
+      "title": "Dr. Jose Jose Aranguren Cangas, DDS, MSc. Edondocia",
+      "subtitle": "Visiting Professor from The University of Complutense de Madrid Spain"
+    },
+    {
+      "src": "./videos/TemuPakar/Prof_drg_Suryono_S.H_M.M_PhD.mp4",
+      "image": "",
+      "title": "Prof.drg. Suryono, S.H., M.M, Ph.D",
+      "subtitle": "Visiting Professor - Ketua AFDOKGI & Dekan UGM"
+    },
+    {
+      "src": "./videos/TemuPakar/Prof. Dr. Carlos Oteo-Morilla, DDS, MSc Odonto Science (Visiting Professor - The University of Complutense de Madrid Spain).mp4",
+      "image": "",
+      "title": "Prof. Dr. Carlos Oteo-Morilla, DDS, MSc. Odonto Science",
+      "subtitle": "Visiting Professor from The University of Complutense de Madrid Spain"
+    },
+    {
+      "src": "./videos/TemuPakar/Prof. Dr. Luis Segura-Mori, DDS, MSc, PhD.mp4",
+      "image": "",
+      "title": "Prof. Dr. Luis Segura-Mori, DDS, MSc, PhD",
+      "subtitle": "Visiting Professor Ray Juan Carlos University & Centro Medico Enova Teaching Hospital Spain"
+    }
+  ],
+  "title": "Belajar dari Para Pakar, Terhubung dengan Dunia",
+  "intro": "",
+  "paragraphs": [
+    "Program Studi Kedokteran Gigi Universitas Prima Indonesia terus menghadirkan lingkungan akademik yang dinamis melalui berbagai **kegiatan kuliah umum bersama dosen tamu, pakar, akademisi, dan praktisi dari tingkat nasional maupun internasional**. Kehadiran para narasumber dari berbagai institusi dan latar belakang keilmuan memberikan kesempatan bagi mahasiswa untuk memperluas wawasan, mengenal perkembangan terkini dalam dunia kedokteran gigi, serta memahami perspektif yang lebih luas mengenai pendidikan, penelitian, dan praktik profesional.",
+    "Lebih dari sekadar forum akademik, setiap kuliah umum menjadi ruang untuk bertukar gagasan, berbagi pengalaman, dan membangun jejaring keilmuan. Interaksi langsung dengan para pakar menghadirkan inspirasi baru bagi mahasiswa sekaligus memperkuat budaya belajar yang terbuka, kritis, dan adaptif terhadap perkembangan ilmu pengetahuan dan teknologi.",
+    "Kehadiran dosen tamu nasional dan internasional juga menjadi bagian dari upaya UNPRI untuk terus membangun kolaborasi akademik dan memperluas konektivitas dengan komunitas kedokteran gigi yang lebih luas. Melalui diskusi yang hangat dan penuh makna, mahasiswa diajak untuk tidak hanya memahami ilmu dari ruang kelas, tetapi juga melihat bagaimana ilmu tersebut berkembang dan diterapkan dalam konteks global.",
+    "Berbagai **kesan dan testimoni dari para dosen tamu** turut menjadi refleksi berharga bagi Kedokteran Gigi UNPRI. Pandangan mereka mengenai semangat belajar mahasiswa, suasana akademik, fasilitas pendidikan, serta komitmen institusi terhadap pengembangan pendidikan kedokteran gigi menjadi motivasi bagi UNPRI untuk terus tumbuh dan menghadirkan pengalaman pendidikan yang semakin berkualitas.",
+    "Setiap kunjungan meninggalkan lebih dari sekadar pengetahuan. Ia menghadirkan **inspirasi, koneksi, dan perspektif baru** yang memperkaya perjalanan akademik mahasiswa. Di Kedokteran Gigi UNPRI, kami percaya bahwa pendidikan terbaik lahir ketika ilmu, pengalaman, dan kolaborasi bertemu dalam satu ruang untuk tumbuh bersama."
+  ],
+  "items": [],
+  "placeholder": "Daftar pakar dan dokumentasi kegiatan akan ditampilkan di sini."
+}

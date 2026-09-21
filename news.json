@@ -1,0 +1,18 @@
+{
+  "sectionTitle": "Berita",
+  "title": "Berita",
+  "intro": "",
+  "allNews": {
+    "href": "/id/news",
+    "icon": "pe-7s-news-paper",
+    "label": "Lihat Semua Berita"
+  },
+  "items": [],
+  "placeholder": "Belum ada berita.",
+  "agenda": {
+    "title": "Agenda, Aktivitas & Galeri",
+    "intro": "",
+    "items": [],
+    "placeholder": "Coming Soon"
+  }
+}

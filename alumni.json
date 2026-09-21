@@ -1,0 +1,43 @@
+{
+  "sectionTitle": "Alumni",
+  "videos": [
+    {
+      "src": "./videos/Alumni/Calvin.mp4",
+      "image": "",
+      "name": "drg. Ngo Viet Nhan (Calvin)"
+    },
+    {
+      "src": "./videos/Alumni/Truck dan Quang.mp4",
+      "image": "",
+      "name": "drg. Truck dan drg. Quang"
+    },
+    {
+      "src": "./videos/Alumni/RED.mp4",
+      "image": "",
+      "name": "drg. Pham Ngoc Anh Thu (Red)"
+    },
+    {
+      "src": "./videos/Alumni/Jessica.mp4",
+      "image": "",
+      "name": "drg. Tran Pham Thuc Trinh (Jessica)"
+    },
+    {
+      "src": "./videos/Alumni/Emily.mp4",
+      "image": "",
+      "name": "drg. Emily"
+    }
+  ],
+  "profil": {
+    "title": "Cerita Perjalanan, Pengalaman, dan Inspirasi",
+    "subtitle": "Once a Student, Now a Dentist — Voices of Our Alumni",
+    "intro": "",
+    "paragraphs": [
+      "Setiap alumni memiliki cerita tentang proses belajar, tantangan, pencapaian, dan perjalanan yang membentuk langkah profesional mereka. Bagi Kedokteran Gigi UNPRI, alumni bukan hanya bagian dari sejarah institusi, tetapi juga menjadi cerminan dari nilai, pengalaman, dan semangat yang tumbuh selama menempuh pendidikan.",
+      "Melalui **Suara Alumni**, kami menghadirkan kisah-kisah nyata dari para lulusan yang kini menapaki berbagai jalur pengabdian dan karier di bidang kedokteran gigi. Pengalaman mereka menjadi ruang berbagi yang hangat sekaligus inspiratif bagi mahasiswa dan calon mahasiswa untuk melihat bahwa proses pendidikan tidak berhenti di ruang kuliah atau klinik, tetapi terus berkembang dalam setiap langkah profesional.",
+      "Kenangan tentang pembelajaran, bimbingan dosen, pengalaman klinis, persahabatan, hingga tantangan selama pendidikan menjadi bagian penting yang membentuk karakter dan kepercayaan diri para alumni. Dari sanalah lahir generasi dokter gigi yang membawa semangat untuk terus belajar, berkembang, dan memberikan pelayanan terbaik kepada masyarakat."
+    ],
+    "items": [],
+    "placeholder": "Profil alumni akan ditampilkan di sini."
+  },
+  "placeholder": "Coming Soon"
+}

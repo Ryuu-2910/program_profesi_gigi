@@ -1,0 +1,417 @@
+{
+  "sectionTitle": "Kurikulum & Karir",
+  "kurikulum": {
+    "title": "Kurikulum Profesi Dokter Gigi FKKG UNPRI",
+    "intro": "",
+    "matrix": {
+      "terms": [
+        "Sem 1",
+        "Sem 2",
+        "Sem 3",
+        "Sem 4"
+      ],
+      "summary": [
+        {
+          "term": "Semester 1",
+          "sks": "12",
+          "note": "Dasar"
+        },
+        {
+          "term": "Semester 2",
+          "sks": "11",
+          "note": "Pendalaman IKGA"
+        },
+        {
+          "term": "Semester 3",
+          "sks": "9",
+          "note": "Komprehensif"
+        },
+        {
+          "term": "Semester 4",
+          "sks": "4",
+          "note": "Profesional"
+        }
+      ],
+      "rows": [
+        {
+          "name": "Ortodonsia",
+          "note": "Perataan & Estetika Posisi Gigi",
+          "sks": [
+            "1",
+            "1",
+            "1",
+            ""
+          ],
+          "total": "3"
+        },
+        {
+          "name": "Prostodonsia",
+          "note": "Restorasi & Gigi Tiruan",
+          "sks": [
+            "1",
+            "2",
+            "1",
+            ""
+          ],
+          "total": "4"
+        },
+        {
+          "name": "Bedah Mulut",
+          "note": "Tindakan Bedah & Ekstraksi Kompleks",
+          "sks": [
+            "2",
+            "1",
+            "1",
+            ""
+          ],
+          "total": "4"
+        },
+        {
+          "name": "Konservasi Gigi",
+          "note": "Penambalan & Perawatan Saluran Akar",
+          "sks": [
+            "2",
+            "1",
+            "1",
+            ""
+          ],
+          "total": "4"
+        },
+        {
+          "name": "Radiologi Dental",
+          "note": "Pencitraan & Radiografi Gigi",
+          "sks": [
+            "1",
+            "",
+            "",
+            ""
+          ],
+          "total": "1"
+        },
+        {
+          "name": "Periodonsia",
+          "note": "Kesehatan Jaringan Penyangga Gigi",
+          "sks": [
+            "1",
+            "1",
+            "1",
+            ""
+          ],
+          "total": "3"
+        },
+        {
+          "name": "Ilmu Penyakit Mulut",
+          "note": "Diagnosis Kelainan Jaringan Lunak",
+          "sks": [
+            "1",
+            "1",
+            "",
+            ""
+          ],
+          "total": "2"
+        },
+        {
+          "name": "Ilmu Kedokteran Gigi Anak",
+          "note": "Perawatan Gigi Spesifik Pasien Pediatrik",
+          "sks": [
+            "",
+            "2",
+            "1",
+            ""
+          ],
+          "total": "3"
+        },
+        {
+          "name": "Ilmu Kedokteran Gigi Masyarakat",
+          "note": "Kesehatan Masyarakat & Komunitas",
+          "sks": [
+            "3",
+            "",
+            "",
+            ""
+          ],
+          "total": "3"
+        },
+        {
+          "name": "Odontologi Forensik",
+          "note": "Identifikasi Korban via Rekam Medis Gigi",
+          "sks": [
+            "",
+            "",
+            "1",
+            ""
+          ],
+          "total": "1"
+        },
+        {
+          "name": "Kedokteran Gigi Kolaborasi",
+          "note": "Kerjasama Interprofesional Medis",
+          "sks": [
+            "",
+            "1",
+            "",
+            ""
+          ],
+          "total": "1"
+        },
+        {
+          "name": "Pelayanan Prima",
+          "note": "Communication Skill & Hospitality Clinical",
+          "sks": [
+            "",
+            "",
+            "1",
+            "2"
+          ],
+          "total": "3"
+        },
+        {
+          "name": "Penguatan Profesionalisme",
+          "note": "Etika Profesi & Kesiapan Karir",
+          "sks": [
+            "",
+            "1",
+            "1",
+            "2"
+          ],
+          "total": "4"
+        }
+      ],
+      "totalsLabel": "Total SKS Beban Studi",
+      "totals": [
+        "12",
+        "11",
+        "9",
+        "4"
+      ],
+      "grandTotal": "36"
+    },
+    "blocks": []
+  },
+  "alur": {
+    "title": "Alur Pembelajaran Prodi Profesi Kedokteran Gigi",
+    "intro": "",
+    "figure": {
+      "image": "images/alur-pembelajaran.png",
+      "alt": "Alur pembelajaran Program Studi Profesi Kedokteran Gigi UNPRI"
+    },
+    "stages": [
+      {
+        "marker": "A",
+        "title": "Sarjana Kedokteran Gigi",
+        "tagline": "From Knowledge to Practice. From Student to Future Dentist.",
+        "image": "",
+        "paragraphs": [
+          "Meraih gelar Sarjana Kedokteran Gigi (**SKG**) adalah sebuah pencapaian sekaligus awal dari perjalanan berikutnya. Di Program Studi Profesi Dokter Gigi FKKG UNPRI Medan, pengetahuan yang telah dipelajari mulai diterjemahkan menjadi pengalaman klinis nyata. Mahasiswa belajar mengintegrasikan ilmu, keterampilan klinis, teknologi, komunikasi, etika, dan empati dalam memberikan pelayanan kesehatan gigi dan mulut dengan pendampingan dosen dan pembimbing klinik.",
+          "Setiap kasus menjadi pengalaman. Setiap tantangan menjadi kesempatan untuk berkembang. Dan setiap interaksi dengan pasien menjadi bagian dari proses membentuk kepercayaan diri serta profesionalisme sebagai calon dokter gigi. Saatnya melanjutkan perjalanan dari **SKG** menuju **drg.** dan mempersiapkan diri menjadi dokter gigi yang kompeten, adaptif, profesional, dan siap memberikan dampak."
+        ]
+      },
+      {
+        "marker": "B",
+        "title": "Orientasi & Adaptasi Profesi",
+        "tagline": "",
+        "image": "images/stage-orientasi.png",
+        "paragraphs": [
+          "Memasuki Program Studi Profesi Dokter Gigi adalah langkah baru dari dunia akademik menuju pengalaman klinis yang sesungguhnya.",
+          "Melalui **Orientasi dan Adaptasi Profesi**, Mahasiswa Kepaniteraan Klinik dipersiapkan untuk mengenal struktural Rumah Sakit, fasilitas Rumah Sakit, lingkungan dan sistem pendidikan klinis, sistem pelayanan, alur pelayanan pasien, keselamatan pasien, pencegahan dan pengendalian infeksi, etika dan disiplin profesi, komunikasi, kerja sama tim, serta tanggung jawab sebagai calon Dokter Gigi. Tahap ini membantu mahasiswa beradaptasi dengan ritme pembelajaran profesi sekaligus membangun *mindset* profesional, percaya diri, disiplin, dan berorientasi pada pasien sebagai fondasi dalam menjalani pendidikan klinik."
+        ]
+      },
+      {
+        "marker": "C",
+        "title": "Klinik Integrasi Dasar",
+        "tagline": "Six Disciplines. One Integrated Journey.",
+        "image": "images/stage-klinik-dasar.png",
+        "paragraphs": [
+          "Klinik Integrasi Dasar merupakan tahap penting dalam alur pembelajaran Program Studi Profesi Dokter Gigi FKKG UNPRI Medan, tempat mahasiswa mulai menghubungkan ilmu yang telah dipelajari dengan pengalaman klinis dan pelayanan pasien secara nyata.",
+          "Pada tahap ini, pembelajaran mengintegrasikan enam bidang ilmu, yaitu Ilmu Kesehatan Gigi Masyarakat, Ilmu Penyakit Mulut, Ilmu Radiologi Kedokteran Gigi, Periodonsia, Konservasi Gigi, dan Bedah Mulut. Integrasi berbagai disiplin tersebut membentuk cara berpikir mahasiswa agar mampu melihat kondisi pasien secara menyeluruh, sistematis, dan berorientasi pada kebutuhan individual pasien. Mahasiswa dilatih untuk menguasai pencegahan, melakukan asesmen pasien, pemeriksaan klinis dan penunjang, interpretasi informasi diagnostik, penentuan diagnosis, penyusunan rencana perawatan, pelaksanaan tindakan sesuai kompetensi, hingga evaluasi hasil perawatan dengan pendampingan dosen dan pembimbing klinik. Pelayanan pasien melingkupi kasus pembersihan karang gigi, penambalan, pencabutan, dan penyakit mulut sederhana."
+        ]
+      },
+      {
+        "marker": "D",
+        "title": "Klinik Integrasi Lanjutan",
+        "tagline": "Advancing Skills, Integrating Care",
+        "image": "images/stage-klinik-lanjutan.png",
+        "paragraphs": [
+          "Klinik Integrasi Lanjutan merupakan tahap pengembangan kompetensi klinis mahasiswa setelah memperoleh fondasi pembelajaran pada Klinik Integrasi Dasar. Pada tahap ini, mahasiswa menghadapi kebutuhan perawatan yang semakin beragam dan dituntut untuk mengintegrasikan pengetahuan, keterampilan klinis, *clinical reasoning*, serta pengambilan keputusan secara lebih komprehensif. Pembelajaran menghubungkan bidang ilmu **Periodonsia, Konservasi Gigi, Bedah Mulut, dan Ortodonsia** dalam suatu pendekatan pelayanan yang terintegrasi dan berorientasi pada pasien.",
+          "Mahasiswa mengembangkan kompetensi dalam kasus bedah periodontal, melakukan perawatan sesuai indikasi, mendiagnosis serta menangani permasalahan jaringan pulpa, melakukan tindakan bedah minor dalam bedah mulut sesuai kompetensi, serta melakukan asesmen dan penatalaksanaan kasus ortodonti sesuai tahapan pendidikan profesi. Melalui berbagai pengalaman klinis, mahasiswa dilatih untuk menghubungkan temuan anamnesis, pemeriksaan klinis dan penunjang, menentukan diagnosis, menyusun prioritas serta rencana perawatan, melakukan tindakan, hingga mengevaluasi hasil dan menentukan tindak lanjut pasien."
+        ]
+      },
+      {
+        "marker": "E",
+        "title": "Klinik Integrasi Kedokteran Gigi Anak",
+        "tagline": "Little Smiles, Lifelong Impact",
+        "image": "images/stage-kg-anak.png",
+        "paragraphs": [
+          "Klinik Integrasi Kedokteran Gigi Anak membekali mahasiswa dengan pengalaman dalam memberikan pelayanan kesehatan gigi dan mulut secara komprehensif kepada anak dan remaja sesuai kompetensi pendidikan profesi. Pada tahap ini, mahasiswa belajar memahami bahwa setiap anak adalah pasien yang unik. Perawatan tidak hanya berfokus pada kondisi gigi, tetapi juga mempertimbangkan usia, tumbuh kembang, perilaku, kondisi kesehatan umum, faktor risiko, serta kebutuhan individual anak.",
+          "Dengan pendampingan dosen dan pembimbing klinik, mahasiswa mengembangkan kemampuan dalam melakukan anamnesis dan pemeriksaan, penilaian risiko karies, diagnosis, penyusunan rencana perawatan, pencegahan penyakit gigi dan mulut, manajemen perilaku, perawatan gigi sulung dan permanen muda, serta edukasi kesehatan gigi kepada anak dan orang tua. Tahap ini juga menjadi ruang untuk mengembangkan komunikasi, empati, kesabaran, *clinical reasoning*, keselamatan pasien, dan pendekatan *child-centered care*. Setiap perawatan bukan hanya tentang menyelesaikan masalah hari ini, tetapi juga tentang membangun kebiasaan sehat dan pengalaman positif terhadap kesehatan gigi sejak dini."
+        ]
+      },
+      {
+        "marker": "F",
+        "title": "Klinik Integrasi Komprehensif",
+        "tagline": "One Patient. One Comprehensive Journey.",
+        "image": "images/stage-komprehensif.png",
+        "paragraphs": [
+          "Klinik Integrasi Komprehensif mengasah kemampuan mahasiswa dalam memberikan perawatan kesehatan gigi dan mulut secara menyeluruh, terintegrasi, dan berpusat pada pasien. Pada tahap ini, mahasiswa bertanggung jawab melakukan perawatan terhadap satu pasien secara komprehensif dalam satu rongga mulut, mulai dari asesmen awal hingga tercapainya kondisi kesehatan gigi dan mulut yang optimal sesuai kebutuhan dan rencana perawatan pasien.",
+          "Mahasiswa belajar mengintegrasikan berbagai bidang ilmu kedokteran gigi melalui proses anamnesis, pemeriksaan klinis dan penunjang, penentuan diagnosis, identifikasi masalah, penyusunan prioritas dan *sequencing* perawatan, pelaksanaan tindakan lintas disiplin, hingga evaluasi dan tindak lanjut dengan pendampingan dosen dan pembimbing klinik. Perawatan komprehensif mengajarkan mahasiswa untuk tidak hanya melihat satu gigi atau satu keluhan, tetapi memahami kondisi rongga mulut pasien sebagai satu kesatuan.",
+          "Tahap ini menjadi ruang bagi mahasiswa untuk menghubungkan seluruh ilmu dan pengalaman klinis yang telah diperoleh menjadi satu perjalanan perawatan pasien yang utuh. Bukan sekadar menyelesaikan satu tindakan, tetapi merencanakan, melakukan, dan mengevaluasi perawatan untuk membantu pasien mencapai fungsi, kesehatan, kenyamanan, dan kualitas kesehatan gigi dan mulut yang lebih baik."
+        ]
+      },
+      {
+        "marker": "G",
+        "title": "Profesionalisme & Soft Skills",
+        "tagline": "Beyond Clinical Skills, Becoming a Professional",
+        "image": "images/stage-profesionalisme.png",
+        "paragraphs": [
+          "Menjadi dokter gigi tidak hanya membutuhkan kemampuan klinis yang baik. Seorang dokter gigi juga perlu memiliki integritas, empati, komunikasi, kemampuan berkolaborasi, kepemimpinan, kedisiplinan, serta tanggung jawab profesional dalam setiap pelayanan kepada pasien. Pada tahap Penguatan Profesionalisme dan *Soft Skills*, mahasiswa mengembangkan kemampuan nonklinis yang menjadi bagian penting dalam membentuk identitas sebagai calon dokter gigi profesional.",
+          "Mahasiswa dibimbing untuk membangun komunikasi efektif dengan pasien dan keluarga, kerja sama dalam tim kesehatan, manajemen waktu, kemampuan adaptasi, *problem solving*, pengambilan keputusan, kepemimpinan, serta pengelolaan emosi dan konflik dalam lingkungan pelayanan kesehatan. Profesionalisme juga berarti memahami bahwa di balik setiap tindakan terdapat etika, tanggung jawab, keselamatan pasien, kerahasiaan informasi, *informed consent*, disiplin profesi, serta penghormatan terhadap hak dan kebutuhan setiap pasien.",
+          "Tahap ini menjadi ruang bagi mahasiswa untuk tumbuh dari seorang pembelajar klinis menjadi calon dokter gigi yang juga siap dengan dunia kerja dan manajerial sebuah klinik maupun rumah sakit."
+        ]
+      },
+      {
+        "marker": "H",
+        "title": "UKOMNAS",
+        "tagline": "One Final Challenge, One Step Closer to Your Dream",
+        "image": "",
+        "paragraphs": [
+          "Uji Kompetensi Mahasiswa Program Profesi Dokter Gigi (UKOMNAS) merupakan salah satu tahap penting dalam perjalanan mahasiswa menuju profesi dokter gigi. Uji kompetensi menjadi bagian dari proses untuk memastikan calon dokter gigi memiliki pengetahuan, kemampuan berpikir klinis, dan kompetensi yang diperlukan sesuai standar profesi.",
+          "Persiapan menuju uji kompetensi bukan sekadar tentang menghafal materi. Mahasiswa dilatih untuk memahami masalah pasien, menganalisis informasi klinis, menentukan diagnosis, memilih pemeriksaan penunjang, menyusun rencana perawatan, menentukan tindakan yang tepat, serta mempertimbangkan aspek keselamatan pasien, etika, dan profesionalisme. Melalui proses pembelajaran, diskusi kasus, latihan soal berbasis kasus, evaluasi, serta pendampingan dosen, mahasiswa didorong untuk membangun *clinical reasoning*, *critical thinking*, *problem solving*, integrasi lintas bidang ilmu, dan kepercayaan diri dalam menghadapi berbagai situasi klinis.",
+          "Uji kompetensi menjadi momentum bagi mahasiswa untuk menunjukkan bahwa perjalanan belajar yang telah dilalui telah membentuk mereka menjadi calon dokter gigi yang semakin siap memasuki dunia profesi."
+        ]
+      },
+      {
+        "marker": "I",
+        "title": "Yudisium Kedokteran Gigi",
+        "tagline": "",
+        "image": "",
+        "paragraphs": [],
+        "video": {
+          "title": "Video Yudisium Kedokteran Gigi",
+          "src": "./videos/Kurikulum dan Karir/Yudisium_KG_A11.mp4"
+        }
+      }
+    ]
+  },
+  "bidangIlmu": {
+    "title": "Bidang Ilmu Kedokteran Gigi",
+    "intro": "",
+    "items": [
+      "Ilmu Kesehatan Gigi Masyarakat",
+      "Ilmu Radiologi Kedokteran Gigi",
+      "Ilmu Penyakit Mulut",
+      "Ilmu Periodonsia",
+      "Ilmu Konservasi Gigi",
+      "Ilmu Bedah Mulut",
+      "Ilmu Ortodonsia",
+      "Ilmu Prostodonsia",
+      "Ilmu Kedokteran Gigi Anak",
+      "Ilmu Odontologi Forensik"
+    ]
+  },
+  "konsentrasi": {
+    "title": "Konsentrasi",
+    "intro": "",
+    "blocks": [],
+    "placeholder": "Coming Soon"
+  },
+  "peluangKarier": {
+    "title": "Peluang Karir",
+    "subtitle": "One Profession, Many Possibilities",
+    "paragraphs": [
+      "Menjadi dokter gigi bukan berarti hanya memiliki satu pilihan karier. Dunia kedokteran gigi menawarkan berbagai jalur profesional yang dapat berkembang sesuai dengan passion, kompetensi, minat, dan tujuan hidup masing-masing. Dari pelayanan klinis hingga dunia akademik, dari penelitian hingga entrepreneurship, perjalanan setelah menjadi dokter gigi dapat membawa kamu ke berbagai kesempatan untuk terus belajar, berkembang, dan memberikan dampak."
+    ],
+    "cards": [
+      {
+        "number": "01",
+        "image": "",
+        "alt": "Dokter Gigi Praktik",
+        "title": "Dokter Gigi Praktik",
+        "description": "*Start with Care, Grow with Experience* — Memberikan pelayanan kesehatan gigi dan mulut secara langsung kepada pasien menjadi salah satu pilihan utama seorang dokter gigi. Pengalaman klinis menjadi ruang untuk terus mengasah keterampilan, komunikasi, clinical reasoning, dan profesionalisme.",
+        "opportunities": []
+      },
+      {
+        "number": "02",
+        "image": "",
+        "alt": "Dokter Gigi di Rumah Sakit & Fasilitas Kesehatan",
+        "title": "Dokter Gigi di Rumah Sakit & Fasilitas Kesehatan",
+        "description": "*Care Beyond the Dental Chair* — Dokter gigi dapat berkarier di rumah sakit, puskesmas, klinik, maupun fasilitas pelayanan kesehatan lainnya serta berkolaborasi dengan berbagai tenaga kesehatan dalam memberikan pelayanan yang terintegrasi dan berorientasi pada pasien.",
+        "opportunities": []
+      },
+      {
+        "number": "03",
+        "image": "",
+        "alt": "Dokter Gigi Spesialis",
+        "title": "Dokter Gigi Spesialis",
+        "description": "*Find Your Expertise. Take It Further.* — Bagi yang ingin mendalami bidang tertentu, pendidikan spesialis membuka kesempatan untuk mengembangkan kompetensi lebih lanjut dalam berbagai cabang ilmu kedokteran gigi sesuai minat dan ketentuan pendidikan yang berlaku.",
+        "opportunities": []
+      },
+      {
+        "number": "04",
+        "image": "",
+        "alt": "Akademisi & Dosen Kedokteran Gigi",
+        "title": "Akademisi & Dosen Kedokteran Gigi",
+        "description": "*Teach. Inspire. Shape the Next Generation.* — Bagi yang memiliki passion dalam pendidikan, dunia akademik memberikan kesempatan untuk berbagi ilmu, membimbing mahasiswa, mengembangkan pendidikan, serta ikut membentuk generasi dokter gigi berikutnya.",
+        "opportunities": []
+      },
+      {
+        "number": "05",
+        "image": "",
+        "alt": "Peneliti Kedokteran Gigi",
+        "title": "Peneliti Kedokteran Gigi",
+        "description": "*Discover Today. Transform Tomorrow.* — Dunia kedokteran gigi terus membutuhkan penelitian. Dokter gigi dapat terlibat dalam pengembangan pengetahuan, bahan kedokteran gigi, teknologi diagnostik, metode perawatan, kesehatan masyarakat, hingga berbagai inovasi yang berpotensi meningkatkan kualitas pelayanan.",
+        "opportunities": []
+      },
+      {
+        "number": "06",
+        "image": "",
+        "alt": "Dental Entrepreneur",
+        "title": "Dental Entrepreneur",
+        "description": "*From Clinical Skills to Business Vision* — Dokter gigi juga dapat mengembangkan kemampuan kewirausahaan dan manajemen untuk membangun serta mengelola layanan kesehatan gigi sesuai regulasi dan standar profesi yang berlaku. Perpaduan antara clinical knowledge, leadership, service, dan business mindset dapat membuka ruang untuk menciptakan pelayanan yang inovatif dan bernilai bagi masyarakat.",
+        "opportunities": []
+      },
+      {
+        "number": "07",
+        "image": "",
+        "alt": "Digital Dentistry & Dental Technology",
+        "title": "Digital Dentistry & Dental Technology",
+        "description": "*Dentistry Meets Technology* — Transformasi digital menghadirkan ruang baru bagi dokter gigi untuk berkembang bersama teknologi. Digital imaging, CAD/CAM, intraoral scanning, artificial intelligence, dan berbagai inovasi lainnya semakin menjadi bagian dari perkembangan kedokteran gigi modern.",
+        "opportunities": []
+      },
+      {
+        "number": "08",
+        "image": "",
+        "alt": "Public Health & Community Dentistry",
+        "title": "Public Health & Community Dentistry",
+        "description": "*Create Smiles. Create Impact.* — Tidak semua dampak harus dimulai dari dental chair. Dokter gigi juga dapat berkontribusi dalam program promotif dan preventif, edukasi kesehatan, pelayanan berbasis komunitas, serta berbagai program peningkatan kesehatan gigi dan mulut masyarakat.",
+        "opportunities": []
+      },
+      {
+        "number": "09",
+        "image": "",
+        "alt": "Dental Industry & Professional Consultant",
+        "title": "Dental Industry & Professional Consultant",
+        "description": "*Connect Science with Innovation* — Pengetahuan klinis seorang dokter gigi juga relevan dalam perkembangan industri kedokteran gigi. Dengan kompetensi dan pengalaman yang sesuai, dokter gigi dapat terlibat dalam edukasi profesional, pengembangan produk, clinical affairs, scientific communication, maupun berbagai bentuk kolaborasi antara ilmu kedokteran gigi dan industri.",
+        "opportunities": []
+      },
+      {
+        "number": "10",
+        "image": "",
+        "alt": "Leadership & Healthcare Management",
+        "title": "Leadership & Healthcare Management",
+        "description": "*Lead Beyond Dentistry* — Dengan kemampuan leadership, komunikasi, manajemen, problem solving, dan strategic thinking, dokter gigi dapat mengambil peran dalam pengelolaan klinik, rumah sakit, institusi pendidikan, organisasi profesi, maupun berbagai bidang pelayanan kesehatan lainnya.",
+        "opportunities": []
+      }
+    ],
+    "closingTitle": "Your Degree Is Just the Beginning",
+    "closing": [
+      "Sepuluh jalur di atas bukanlah batas dari perjalanan seorang dokter gigi. Ilmu pengetahuan terus berkembang. Teknologi terus berubah. Peluang baru akan terus muncul. Yang terpenting adalah memiliki fondasi kompetensi yang kuat, profesionalisme, integritas, kemampuan beradaptasi, dan semangat untuk terus belajar.",
+      "**Choose Your Path. Build Your Expertise. Create Your Impact.** Karena menjadi dokter gigi bukan hanya tentang *where you work*, tetapi juga tentang *who you become and the impact you create*. One Profession. Many Paths. Endless Possibilities."
+    ]
+  },
+  "mobilitasGlobal": {
+    "title": "Mobilitas Global",
+    "intro": "",
+    "blocks": [],
+    "placeholder": "Coming Soon"
+  }
+}
