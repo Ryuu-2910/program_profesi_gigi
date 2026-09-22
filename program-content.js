@@ -4,15 +4,16 @@
 
    Each tab reads one JSON file sitting next to this script:
 
-     overview.json    -> Gambaran Umum
-     visimisi.json    -> Visi & Misi
+     overview.json    -> Gambaran Umum (termasuk Visi & Misi dan blok
+                         "Mengapa" - keduanya dirender di panel ini)
      academics.json   -> Kurikulum & Karir
      lecturers.json   -> Struktural & Dosen
      facilities.json  -> Sarana Prasarana
      temupakar.json   -> Temu Pakar Kedokteran Gigi
      alumni.json      -> Alumni
      partners.json    -> Mitra
-     news.json        -> Berita
+     news.json        -> Berita & Agenda
+     faq.json         -> FAQ
      cta.json         -> Ajakan mendaftar (di bawah konten, sebelum footer)
 
    The <section data-panel="..."> shells stay in index.html, so the tab
@@ -422,11 +423,13 @@
         (v.poster ? ' poster="' + esc(v.poster) + '"' : "") +
         '><source src="' + esc(src) + '"></video>';
     } else {
-      inner =
-        '<iframe class="unpri-video__player" src="' + esc(src) + '" ' +
-        'title="' + esc(v.title || "Video") + '" frameborder="0" loading="lazy" ' +
-        'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ' +
-        "allowfullscreen></iframe>";
+        var ytId = youtubeId(src);
+  var embedSrc = ytId ? "https://www.youtube.com/embed/" + ytId : src;
+  inner =
+    '<iframe class="unpri-video__player" src="' + esc(embedSrc) + '" ' +
+    'title="' + esc(v.title || "Video") + '" frameborder="0" loading="lazy" ' +
+    'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ' +
+    "allowfullscreen></iframe>";
     }
 
     var html = '<figure class="' + cls + '">';
@@ -956,26 +959,30 @@
       placeholder: sekilas.placeholder
     });
 
-    // 2. Akreditasi + sertifikasi
-    //    (This programme has no Sambutan, Mengapa UNPRI? or keunggulan
-    //    blocks here - the Kaprodi profile lives in Struktural & Dosen.)
-    var akred = d.akreditasi || {};
+    // 2. Mengapa Memilih Profesi Dokter Gigi?
+    var whyProfession = d.mengapaProfesiDokterGigi || {};
     html += block({
-      id: "akreditasi",
-      icon: "pe-7s-medal",
-      title: akred.title || "Akreditasi & Sertifikasi",
-      inner: renderAkreditasi(akred),
-      placeholder: akred.placeholder
+      id: "mengapa-profesi",
+      icon: "pe-7s-ribbon",
+      title: whyProfession.title || "Mengapa Memilih Profesi Dokter Gigi?",
+      inner: paragraphs(whyProfession.paragraphs),
+      placeholder: whyProfession.placeholder
     });
 
-    return html;
-  }
+    // 3. Mengapa Memilih Kami
+    var why = d.mengapaPilihKami || {};
+    html += block({
+      id: "mengapa",
+      icon: "pe-7s-star",
+      title: why.title || "Mengapa Memilih Kami?",
+      subtitle: why.subtitle,
+      intro: why.intro,
+      inner: renderWhyCards(why.items),
+      placeholder: why.placeholder
+    });
 
-  /* ====================================================================
-     VISI & MISI  (its own tab on this programme)
-     ==================================================================== */
-
-  function renderVisiMisi(d) {
+    // 4. Visi & Misi - folded in here instead of its own tab, two columns
+    //    on one row.
     var visi = "";
     if (d.visi) {
       visi =
@@ -988,9 +995,10 @@
         "</div></div>";
     }
 
+    var misiItems = (d.misi && d.misi.items) || [];
     var misi = "";
     if (d.misi) {
-      var rows = ((d.misi && d.misi.items) || [])
+      var rows = misiItems
         .map(function (text, i) {
           return (
             '<div class="unpri-misi__item">' +
@@ -1008,18 +1016,35 @@
         "</div>";
     }
 
-    var html =
-      sectionTitle(d.sectionTitle || "Visi & Misi") +
-      block({
-        id: "visimisi",
-        icon: "pe-7s-ribbon",
-        title: d.title || "Visi & Misi",
-        intro: d.intro,
-        inner: visi || misi ? '<div class="unpri-vm">' + visi + misi + "</div>" : ""
-      });
+    html += block({
+      id: "visimisi",
+      icon: "pe-7s-ribbon",
+      title: "Visi & Misi",
+      inner: visi || misi ? '<div class="unpri-vm">' + visi + misi + "</div>" : ""
+    });
+
+    // 5. Akreditasi + sertifikasi
+    //    (This programme has no Sambutan or Nilai blocks here - the
+    //    Kaprodi profile lives in Struktural & Dosen.)
+    var akred = d.akreditasi || {};
+    html += block({
+      id: "akreditasi",
+      icon: "pe-7s-medal",
+      title: akred.title || "Akreditasi & Sertifikasi",
+      inner: renderAkreditasi(akred),
+      placeholder: akred.placeholder
+    });
 
     return html;
   }
+
+  /* ====================================================================
+     VISI & MISI  (its own tab on this programme)
+     ==================================================================== */
+
+  // Visi & Misi used to be its own tab (renderVisiMisi); it is now folded
+  // straight into Gambaran Umum inside renderOverview, so this standalone
+  // renderer and the visimisi.json file it read from are gone.
 
   /* ====================================================================
      B. AKADEMIK & KARIER
@@ -1751,6 +1776,57 @@
   }
 
   /* ====================================================================
+     FAQ
+     ==================================================================== */
+
+  function renderFaq(d) {
+    var items = (d.items || []).filter(function (f) {
+      return has(f.question);
+    });
+
+    var inner = "";
+    if (items.length) {
+      inner =
+        '<div class="unpri-faq">' +
+        items
+          .map(function (f, i) {
+            var answer = has(f.paragraphs)
+              ? paragraphs(f.paragraphs)
+              : has(f.answer)
+              ? "<p>" + rich(f.answer) + "</p>"
+              : '<p class="unpri-defEmpty">Jawaban sedang disiapkan.</p>';
+
+            if (has(f.items)) answer += bullets(f.items);
+
+            return (
+              '<details class="unpri-faqItem"' + (i === 0 ? " open" : "") + ">" +
+              '<summary class="unpri-faqQ">' +
+              '<span class="unpri-faqQ__mark" aria-hidden="true">' + icon("pe-7s-help1") + "</span>" +
+              '<span class="unpri-faqQ__text">' + esc(f.question) + "</span>" +
+              '<span class="unpri-faqQ__chevron" aria-hidden="true"></span>' +
+              "</summary>" +
+              '<div class="unpri-faqA">' + answer + "</div>" +
+              "</details>"
+            );
+          })
+          .join("") +
+        "</div>";
+    }
+
+    return (
+      sectionTitle(d.sectionTitle || "FAQ") +
+      block({
+        id: "faq-list",
+        icon: "pe-7s-help1",
+        title: d.title || "Pertanyaan yang Sering Diajukan",
+        intro: d.intro,
+        inner: inner,
+        placeholder: d.placeholder
+      })
+    );
+  }
+
+  /* ====================================================================
      CTA
      ==================================================================== */
 
@@ -1820,7 +1896,6 @@
     initFaqAccordion();
     initVideoCards();
     load("overview.json", '[data-panel="overview"]', "Gambaran Umum", renderOverview);
-    load("visimisi.json", '[data-panel="visimisi"]', "Visi & Misi", renderVisiMisi);
     load("academics.json", '[data-panel="academics"]', "Kurikulum & Karir", renderAcademics);
     load("lecturers.json", '[data-panel="lecturers"]', "Struktural & Dosen", renderLecturers);
     load("facilities.json", '[data-panel="facilities"]', "Sarana Prasarana", renderFacilities);
@@ -1828,6 +1903,7 @@
     load("alumni.json", '[data-panel="alumni"]', "Alumni", renderAlumni);
     load("partners.json", '[data-panel="partners"]', "Mitra", renderPartners);
     load("news.json", '[data-panel="news"]', "Berita", renderNews);
+    load("faq.json", '[data-panel="faq"]', "FAQ", renderFaq);
     load("cta.json", "[data-cta]", "Ajakan Mendaftar", renderCta);
   }
 

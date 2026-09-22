@@ -2018,15 +2018,15 @@
     <div
       class="unpri-pshow"
       style="
-        --up-primary: #1E90FF;
-        --up-primary-dark: #1770C7;
-        --up-deep: #0B3761;
-        --up-soft: #E8F4FF;
+        --up-primary: #5F9EA0;
+        --up-primary-dark: #4A7B7D;
+        --up-deep: #243C3D;
+        --up-soft: #EFF5F6;
         --up-accent: #f4c542;
-        --up-ink: #07243F;
-        --up-muted: #909CA9;
-        --up-surface: #F8FCFF;
-        --up-border: #DDEEFF;
+        --up-ink: #172728;
+        --up-muted: #979E9E;
+        --up-surface: #FAFCFC;
+        --up-border: #E7F0F1;
         /* RGB triplets of the two tints above, for the rgba() stops in the
            hero gradient. Keep these in sync with --up-soft / --up-surface. */
         --up-soft-rgb: 243, 234, 248;
@@ -2134,9 +2134,6 @@
               <a href="#overview" data-tab="overview" class="is-active"
                 >Gambaran Umum</a
               >
-              <a href="#visimisi" data-tab="visimisi"
-                >Visi &amp; Misi</a
-              >
               <a href="#academics" data-tab="academics"
                 >Kurikulum &amp; Karir</a
               >
@@ -2156,7 +2153,10 @@
                 >Mitra</a
               >
               <a href="#news" data-tab="news"
-                >Berita</a
+                >Berita &amp; Agenda</a
+              >
+              <a href="#faq" data-tab="faq"
+                >FAQ</a
               >
             </div>
           </div>
@@ -2164,18 +2164,12 @@
           <!-- TAB PANELS. Every panel is filled by program-content.js
                from the JSON file named in the comment above it. -->
           <div class="unpri-tabPanels">
-            <!-- GAMBARAN UMUM  -> overview.json -->
+            <!-- GAMBARAN UMUM  -> overview.json  (Visi & Misi and the
+                 "Mengapa" blocks are rendered inside this same panel) -->
             <section
               class="unpri-panel is-active"
               id="overview"
               data-panel="overview"
-            ></section>
-
-            <!-- VISI &amp; MISI  -> visimisi.json -->
-            <section
-              class="unpri-panel"
-              id="visimisi"
-              data-panel="visimisi"
             ></section>
 
             <!-- KURIKULUM &amp; KARIR  -> academics.json -->
@@ -2220,11 +2214,18 @@
               data-panel="partners"
             ></section>
 
-            <!-- BERITA  -> news.json -->
+            <!-- BERITA &amp; AGENDA  -> news.json -->
             <section
               class="unpri-panel"
               id="news"
               data-panel="news"
+            ></section>
+
+            <!-- FAQ  -> faq.json -->
+            <section
+              class="unpri-panel"
+              id="faq"
+              data-panel="faq"
             ></section>
 
           </div>
@@ -2513,7 +2514,7 @@
     <!-- Simple program-specific footer. No LandingPage footer record is loaded. -->
     <footer
       class="program-footer"
-      style="--up-primary: #1E90FF; --up-deep: #0B3761; --up-soft: #E8F4FF"
+      style="--up-primary: #5F9EA0; --up-deep: #243C3D; --up-soft: #EFF5F6"
     >
       <div class="container">
         <div class="program-footer__main">

@@ -39,8 +39,77 @@
       "Pembelajaran juga diarahkan agar mahasiswa mampu mengikuti perkembangan ilmu pengetahuan dan teknologi kedokteran gigi. Di tengah transformasi pelayanan kesehatan, mahasiswa didorong untuk mengenal dan beradaptasi dengan perkembangan *digital dentistry*, teknologi diagnostik, *evidence-based dentistry*, serta berbagai inovasi yang terus membentuk masa depan profesi dokter gigi. Seorang dokter gigi juga dituntut untuk memiliki integritas, empati, kemampuan berkomunikasi, kolaborasi, profesionalisme, serta komitmen terhadap keselamatan dan kepentingan pasien. Oleh karena itu, Program Studi Profesi Dokter Gigi FKKG UNPRI menghadirkan proses pendidikan yang tidak hanya berfokus pada keterampilan klinis, tetapi juga pada pembentukan karakter profesional dan semangat untuk terus belajar sepanjang hayat. Kami percaya bahwa kompetensi terbaik lahir dari perpaduan antara ilmu yang kuat, keterampilan yang terlatih, teknologi yang relevan, dan kepedulian terhadap sesama.",
       "Program Studi Profesi Dokter Gigi FKKG UNPRI menjadi bagian penting dalam perjalanan mahasiswa dari seorang **Sarjana Kedokteran Gigi menuju dokter gigi profesional** yang siap menghadapi perkembangan dunia kedokteran gigi dan memberikan kontribusi nyata bagi peningkatan kesehatan gigi dan mulut masyarakat. Di sinilah pengetahuan menjadi pengalaman, keterampilan berkembang menjadi kompetensi, dan proses belajar tumbuh menjadi sebuah tanggung jawab profesi."
     ],
-    "closing": "Shape Smiles. Shape the Future — Your Future has Smiles."
+    "closing": "Shape Smiles. Shape the Future. Your Future has Smiles."
   },
+
+  "mengapaProfesiDokterGigi": {
+    "title": "Mengapa Memilih Profesi Dokter Gigi?",
+    "paragraphs": [
+      "Program Studi Profesi Dokter Gigi merupakan tahap akademik penting dalam perjalanan menjadi dokter gigi. Mahasiswa membawa bekal ilmu kedokteran gigi dasar dan klinis dari jenjang sarjana, lalu mengasahnya langsung pada pasien nyata, di bawah bimbingan dosen dan pembimbing klinik, sebagai dasar untuk menjadi tenaga kesehatan gigi yang kompeten dan profesional.",
+      "Pendidikan profesi dokter gigi bukan hanya tentang menguasai teori dan keterampilan klinis, tetapi juga tentang membangun kemampuan berpikir kritis, mengambil keputusan berbasis bukti, berkomunikasi dengan pasien dan tim kesehatan, serta memahami tanggung jawab etis seorang dokter gigi.",
+      "Setelah menyelesaikan jenjang Profesi Dokter Gigi dan diambil sumpahnya, lulusan berhak menyandang gelar drg. dan dapat langsung berpraktik sebagai dokter gigi. Pengembangan karier juga dapat mencakup studi lanjut Program Magister Kedokteran Gigi, penelitian, akademik, manajemen kesehatan, hingga bidang lain yang relevan dengan kompetensi dan pendidikan lanjutan."
+    ]
+  },
+
+  "mengapaPilihKami": {
+    "title": "Mengapa Memilih Kami?",
+    "subtitle": "Keunggulan Program Studi",
+    "intro": "",
+    "_ICONS": "Pilihan icon: pe-7s-study (toga), pe-7s-note2 (dokumen), pe-7s-users (orang), pe-7s-science (labu lab), pe-7s-monitor (layar), pe-7s-global (globe), pe-7s-star (bintang), pe-7s-culture (rumah sakit), pe-7s-portfolio (koper), pe-7s-medal, pe-7s-ribbon, pe-7s-check, pe-7s-cup, pe-7s-photo, pe-7s-clock.",
+    "items": [
+      {
+        "icon": "pe-7s-culture",
+        "title": "RSGM (Rumah Sakit Gigi dan Mulut) Milik Sendiri sebagai Wahana Pendidikan Utama"
+      },
+      {
+        "icon": "pe-7s-note2",
+        "title": "Kurikulum Profesi Berbasis Outcome Based Education (OBE)"
+      },
+      {
+        "icon": "pe-7s-users",
+        "title": "Dosen Profesional dan Berpengalaman"
+      },
+      {
+        "icon": "pe-7s-science",
+        "title": "Fasilitas Klinik dan Laboratorium Kedokteran Gigi Modern"
+      },
+      {
+        "icon": "pe-7s-global",
+        "title": "Kuliah Tamu dan Kerja Sama bersama Profesor Tamu Internasional"
+      },
+      {
+        "icon": "pe-7s-medal",
+        "title": "Terakreditasi Unggul"
+      },
+      {
+        "icon": "pe-7s-study",
+        "title": "Peluang Studi Lanjut Program Magister Kedokteran Gigi"
+      },
+      {
+        "icon": "pe-7s-star",
+        "title": "Lingkungan Akademik yang Mendukung Pengembangan Karakter dan Profesionalisme"
+      }
+    ]
+  },
+
+  "visi": {
+    "kicker": "Visi",
+    "text": "Menjadi program studi yang menghasilkan dokter gigi sebagai profesional yang unggul dalam bidang socio-technopreneurship yang inovatif dan adaptif pada tahun 2030."
+  },
+  "misi": {
+    "kicker": "Misi",
+    "items": [
+      "Menyelenggarakan pendidikan/pembelajaran yang unggul di bidang socio-technopreneurship.",
+      "Menyelenggarakan penelitian yang unggul di bidang socio-technopreneurship.",
+      "Menyelenggarakan pengabdian masyarakat yang unggul di bidang socio-technopreneurship.",
+      "Membangun kemitraan dan jaringan secara lokal, regional, nasional serta internasional untuk pertukaran pengetahuan dan penelitian.",
+      "Mengembangkan tata kelola program studi dalam rangka merespon pelbagai perubahan (adaptif).",
+      "Mengembangkan manajemen pelayanan mahasiswa secara profesional.",
+      "Mempersiapkan dokter gigi yang memiliki keterampilan klinis dan profesional.",
+      "Mengembangkan sistem kepaniteraan klinik yang mengutamakan patient care secara komprehensif dan holistik."
+    ]
+  },
+
   "akreditasi": {
     "title": "Akreditasi & Sertifikasi",
     "label": "Akreditasi",
