@@ -5,6 +5,12 @@
   --up-soft-rgb: 238, 243, 248;
   --up-surface-rgb: 244, 248, 251;
   color: var(--up-ink, #07243F);
+  /* Plain base - no pattern here. The page background is nearly white, and
+     the hero photo overlaps this element along an irregular edge (the
+     floating info-card), so a pattern painted at this level shows through
+     as a stray strip wherever that overlap doesn't quite line up. The gold
+     sparkle instead lives on the self-contained blue cards below
+     (.unpri-akredBand, .unpri-closingBox) where it can't leak. */
   background: var(--up-surface, #F4F8FB);
 }
 .unpri-pshow * {
@@ -196,7 +202,13 @@
   text-overflow: ellipsis;
 }
 .unpri-body {
-  background: var(--up-surface, #F4F8FB);
+  /* The page's actual visible base (every tab panel sits on this, not on
+     .unpri-pshow directly - .unpri-body is opaque and paints over it) gets
+     a thin gold trellis/veining pattern on the pale-blue base, echoing the
+     marble-and-brass reference. Hero and footer keep their own separate
+     backgrounds untouched. */
+  background: var(--up-surface, #F4F8FB)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='70'%3E%3Cpath d='M0 70 L70 0 L140 70' fill='none' stroke='%23C79A3D' stroke-width='2.25' stroke-opacity='0.45'/%3E%3C/svg%3E");
   padding: 24px 0 50px;
 }
 .unpri-card {
