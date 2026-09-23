@@ -3,9 +3,9 @@
    without the inline copy. Keep in sync with --up-soft / --up-surface. */
 .unpri-pshow {
   --up-soft-rgb: 238, 243, 248;
-  --up-surface-rgb: 255, 255, 255;
+  --up-surface-rgb: 244, 248, 251;
   color: var(--up-ink, #07243F);
-  background: var(--up-surface, #FFFFFF);
+  background: var(--up-surface, #F4F8FB);
 }
 .unpri-pshow * {
   box-sizing: border-box;
@@ -68,8 +68,8 @@
     ),
     linear-gradient(
       0deg,
-      rgba(var(--up-surface-rgb, 255, 255, 255), 0.08),
-      rgba(var(--up-surface-rgb, 255, 255, 255), 0.08)
+      rgba(var(--up-surface-rgb, 244, 248, 251), 0.08),
+      rgba(var(--up-surface-rgb, 244, 248, 251), 0.08)
     );
   opacity: 1;
 }
@@ -196,16 +196,23 @@
   text-overflow: ellipsis;
 }
 .unpri-body {
-  background: var(--up-surface, #FFFFFF);
+  background: var(--up-surface, #F4F8FB);
   padding: 24px 0 50px;
 }
 .unpri-card {
   background: #fff;
   border: 1px solid var(--up-border, #E2E8F0);
+  /* Pale blue top edge at rest, gold only on hover - keeps gold as a
+     deliberate hover accent rather than a permanent fixture on every card. */
+  border-top: 3px solid var(--up-soft, #EEF3F8);
   border-radius: 14px;
   box-shadow: 0 10px 28px rgba(32, 22, 40, 0.045);
   height: 100%;
   margin-bottom: 14px;
+  transition: border-top-color 200ms ease;
+}
+.unpri-card:hover {
+  border-top-color: var(--up-accent, #C79A3D);
 }
 .unpri-card__body {
   padding: 16px 16px;
@@ -236,7 +243,7 @@
   z-index: 5;
   margin: 0 0 18px;
   padding: 9px 0;
-  background: var(--up-surface, #FFFFFF);
+  background: var(--up-surface, #F4F8FB);
   border-bottom: 1px solid var(--up-border, #E2E8F0);
 }
 .unpri-nav__row {
@@ -938,11 +945,25 @@
    3. OVERVIEW PANEL — text + gallery, Visi, Misi
    -------------------------------------------------------------------------- */
 .unpri-sectionTitle {
-  margin: 0 0 12px;
+  position: relative;
+  margin: 0 0 20px;
+  padding-bottom: 12px;
   color: var(--up-deep, #2C5580);
   font-size: 20px;
   font-weight: 900;
   letter-spacing: -0.2px;
+}
+/* Short gold rule under every panel heading - a second, more visible
+   place gold shows up beyond the thin card edges. */
+.unpri-sectionTitle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 46px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--up-accent, #C79A3D);
 }
 .unpri-kicker {
   margin: 0 0 8px;
@@ -2266,7 +2287,7 @@ position: relative;
 
 .unpri-blockSub {
   margin: -4px 0 12px;
-  color: var(--up-primary, #3D6EA3);
+  color: var(--up-accent-text, #96701F);
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 0.6px;
@@ -2497,7 +2518,7 @@ position: relative;
   padding: 26px 28px;
   border: 1px solid var(--up-border, #E2E8F0);
   border-radius: 20px;
-  background: var(--up-surface, #FFFFFF);
+  background: var(--up-surface, #F4F8FB);
   transition: transform 440ms cubic-bezier(0.22, 0.75, 0.3, 1),
     box-shadow 440ms ease;
 }
@@ -2613,7 +2634,7 @@ position: relative;
   background: linear-gradient(
     135deg,
     var(--up-soft, #EEF3F8) 0%,
-    var(--up-surface, #FFFFFF) 100%
+    var(--up-surface, #F4F8FB) 100%
   );
   text-align: center;
 }
@@ -2693,7 +2714,7 @@ position: relative;
   justify-content: center;
   aspect-ratio: 4 / 3;
   padding: 12px;
-  background: var(--up-surface, #FFFFFF);
+  background: var(--up-surface, #F4F8FB);
 }
 .unpri-cert__frame img {
   max-width: 100%;
@@ -2783,7 +2804,7 @@ position: relative;
 /* --- career cards --------------------------------------------------------- */
 .unpri-careerTagline {
   margin: 0 0 12px;
-  color: var(--up-primary, #3D6EA3);
+  color: var(--up-accent-text, #96701F);
   font-size: 15px;
   font-weight: 900;
   line-height: 1.5;
@@ -3010,7 +3031,7 @@ position: relative;
   display: none;
 }
 .unpri-faqQ:hover {
-  background: var(--up-surface, #FFFFFF);
+  background: var(--up-surface, #F4F8FB);
 }
 .unpri-faqQ__mark {
   flex: 0 0 auto;
@@ -3200,13 +3221,26 @@ position: relative;
 .unpri-alumniCard__quote {
   position: relative;
   margin: 14px 0 0;
-  padding: 12px 14px;
-  border-radius: 12px;
-  background: var(--up-surface, #FFFFFF);
+  padding: 12px 14px 12px 18px;
+  border-left: 3px solid var(--up-accent, #C79A3D);
+  border-radius: 4px 12px 12px 4px;
+  background: var(--up-surface, #F4F8FB);
   color: var(--up-ink, #07243F);
   font-size: 12.5px;
   font-style: italic;
   line-height: 1.75;
+}
+/* A gold mark rather than gold body copy - keeps the quote itself
+   legible while still giving it its own gold accent. */
+.unpri-alumniCard__quote::before {
+  content: "\201C";
+  margin-right: 2px;
+  color: var(--up-accent, #C79A3D);
+  font-size: 20px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 0;
+  vertical-align: -3px;
 }
 
 /* FAQ answers: emphasis stays black, no coloured runs of text. */
@@ -3440,7 +3474,7 @@ a.unpri-dosenCard:hover {
   overflow: hidden;
   border: 1px solid var(--up-border, #E2E8F0);
   border-radius: 16px;
-  background: var(--up-surface, #FFFFFF);
+  background: var(--up-surface, #F4F8FB);
 }
 .unpri-figure img {
   display: block;
@@ -3509,7 +3543,7 @@ a.unpri-dosenCard:hover {
 }
 .unpri-stage__tagline {
   margin: 5px 0 10px;
-  color: var(--up-primary, #3D6EA3);
+  color: var(--up-accent-text, #96701F);
   font-size: 13px;
   font-weight: 800;
   font-style: italic;
@@ -3520,7 +3554,7 @@ a.unpri-dosenCard:hover {
   overflow: hidden;
   border: 1px solid var(--up-border, #E2E8F0);
   border-radius: 14px;
-  background: var(--up-surface, #FFFFFF);
+  background: var(--up-surface, #F4F8FB);
 }
 .unpri-stage__fig img {
   display: block;
@@ -3649,7 +3683,7 @@ a.unpri-dosenCard:hover {
 }
 .unpri-matrix tfoot td {
   border-bottom: 0;
-  background: var(--up-surface, #FFFFFF);
+  background: var(--up-surface, #F4F8FB);
   color: var(--up-deep, #2C5580);
   font-weight: 900;
 }

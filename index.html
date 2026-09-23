@@ -2023,9 +2023,13 @@
         --up-deep: #2C5580;
         --up-soft: #EEF3F8;
         --up-accent: #C79A3D;
+        /* A deeper gold for small bold text (subtitles, taglines) - the
+           lighter --up-accent above reads better as a border/fill than as
+           text at these sizes. */
+        --up-accent-text: #96701F;
         --up-ink: #101828;
         --up-muted: #6B7785;
-        --up-surface: #FFFFFF;
+        --up-surface: #F4F8FB;
         --up-border: #E2E8F0;
         /* Reserved for real, clickable buttons only (hero CTA, apply/ghost
            button hover, play controls) so they stay a strong, solid navy
@@ -2036,7 +2040,7 @@
         /* RGB triplets of the two tints above, for the rgba() stops in the
            hero gradient. Keep these in sync with --up-soft / --up-surface. */
         --up-soft-rgb: 238, 243, 248;
-        --up-surface-rgb: 255, 255, 255;
+        --up-surface-rgb: 244, 248, 251;
       "
     >
       <section class="unpri-hero">
@@ -2475,10 +2479,18 @@
                 activate(name, true);
                 var target = document.getElementById(name);
                 if (target) {
+                  // Offset by the sticky tab bar's own current height/position
+                  // rather than a fixed number, so the panel title (e.g.
+                  // "Sarana Prasarana") lands just below it instead of
+                  // scrolling past it under the bar - this bar sits at a
+                  // different "top" depending on screen size, so a flat
+                  // offset undershoots on some breakpoints.
+                  var navBottom = nav.getBoundingClientRect().bottom;
                   var y =
                     target.getBoundingClientRect().top +
                     window.pageYOffset -
-                    90;
+                    navBottom -
+                    16;
                   window.scrollTo({ top: y, behavior: "smooth" });
                 }
               });
