@@ -2018,19 +2018,25 @@
     <div
       class="unpri-pshow"
       style="
-        --up-primary: #14335C;
+        --up-primary: #3D6EA3;
         --up-primary-dark: #0D2440;
-        --up-deep: #0A1B30;
+        --up-deep: #2C5580;
         --up-soft: #EEF3F8;
         --up-accent: #C79A3D;
         --up-ink: #101828;
         --up-muted: #6B7785;
         --up-surface: #FFFFFF;
         --up-border: #E2E8F0;
+        /* Reserved for real, clickable buttons only (hero CTA, apply/ghost
+           button hover, play controls) so they stay a strong, solid navy
+           even though --up-primary above is now a lighter accent blue used
+           for everything else (tabs, badges, headings, borders, icons). */
+        --up-btn: #14335C;
+        --up-btn-dark: #0D2440;
         /* RGB triplets of the two tints above, for the rgba() stops in the
            hero gradient. Keep these in sync with --up-soft / --up-surface. */
-        --up-soft-rgb: 243, 234, 248;
-        --up-surface-rgb: 250, 247, 252;
+        --up-soft-rgb: 238, 243, 248;
+        --up-surface-rgb: 255, 255, 255;
       "
     >
       <section class="unpri-hero">
@@ -2050,7 +2056,7 @@
               </p>
 
               <h1 class="unpri-title">
-                Profesi <strong>Dokter Gigi</strong>
+                <strong>Profesi Dokter Gigi</strong>
               </h1>
 
               <p class="unpri-sub">Shapes the Smiles, Shape the Future</p>

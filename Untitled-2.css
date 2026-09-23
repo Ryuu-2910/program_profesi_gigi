@@ -2,8 +2,8 @@
    .unpri-pshow in index.html, so the gradient still resolves if a build ships
    without the inline copy. Keep in sync with --up-soft / --up-surface. */
 .unpri-pshow {
-  --up-soft-rgb: 243, 234, 248;
-  --up-surface-rgb: 250, 247, 252;
+  --up-soft-rgb: 238, 243, 248;
+  --up-surface-rgb: 255, 255, 255;
   color: var(--up-ink, #07243F);
   background: var(--up-surface, #FFFFFF);
 }
@@ -52,24 +52,24 @@
         (this is what stops the image peeking through at the far edges) */
   background: linear-gradient(
       90deg,
-      rgba(var(--up-soft-rgb, 243, 234, 248), 0.97) 0%,
-      rgba(var(--up-soft-rgb, 243, 234, 248), 0.95) 26%,
-      rgba(var(--up-soft-rgb, 243, 234, 248), 0.78) 44%,
-      rgba(var(--up-soft-rgb, 243, 234, 248), 0.4) 63%,
-      rgba(var(--up-soft-rgb, 243, 234, 248), 0.12) 84%,
-      rgba(var(--up-soft-rgb, 243, 234, 248), 0) 100%
+      rgba(var(--up-soft-rgb, 238, 243, 248), 0.97) 0%,
+      rgba(var(--up-soft-rgb, 238, 243, 248), 0.95) 26%,
+      rgba(var(--up-soft-rgb, 238, 243, 248), 0.78) 44%,
+      rgba(var(--up-soft-rgb, 238, 243, 248), 0.4) 63%,
+      rgba(var(--up-soft-rgb, 238, 243, 248), 0.12) 84%,
+      rgba(var(--up-soft-rgb, 238, 243, 248), 0) 100%
     ),
     linear-gradient(
       180deg,
-      rgba(var(--up-soft-rgb, 243, 234, 248), 0.42) 0%,
-      rgba(var(--up-soft-rgb, 243, 234, 248), 0.05) 22%,
-      rgba(var(--up-soft-rgb, 243, 234, 248), 0.08) 64%,
-      rgba(var(--up-soft-rgb, 243, 234, 248), 0.6) 100%
+      rgba(var(--up-soft-rgb, 238, 243, 248), 0.42) 0%,
+      rgba(var(--up-soft-rgb, 238, 243, 248), 0.05) 22%,
+      rgba(var(--up-soft-rgb, 238, 243, 248), 0.08) 64%,
+      rgba(var(--up-soft-rgb, 238, 243, 248), 0.6) 100%
     ),
     linear-gradient(
       0deg,
-      rgba(var(--up-surface-rgb, 250, 247, 252), 0.08),
-      rgba(var(--up-surface-rgb, 250, 247, 252), 0.08)
+      rgba(var(--up-surface-rgb, 255, 255, 255), 0.08),
+      rgba(var(--up-surface-rgb, 255, 255, 255), 0.08)
     );
   opacity: 1;
 }
@@ -82,8 +82,8 @@
   height: 520px;
   content: "";
   border-radius: 999px;
-  background: var(--up-primary, #14335C);
-  opacity: 0.1;
+  background: var(--up-soft, #EEF3F8);
+  opacity: 0.6;
   filter: blur(2px);
 }
 .unpri-hero__wrap {
@@ -97,7 +97,7 @@
 }
 .unpri-hero__eyebrow {
   margin: 0 0 14px;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 11px;
   font-weight: 900;
   letter-spacing: 1.25px;
@@ -105,7 +105,7 @@
 }
 .unpri-title {
   margin: 0 0 14px;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-weight: 900;
   letter-spacing: -0.6px;
   line-height: 1.06;
@@ -220,11 +220,11 @@
   margin-bottom: 0;
 }
 .unpri-card__body strong {
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-weight: 900;
 }
 .unpri-card__body a {
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-weight: 900;
 }
 .unpri-card__body a:hover {
@@ -259,7 +259,7 @@
   border-radius: 999px;
   border: 1px solid var(--up-border, #E2E8F0);
   background: #fff;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-weight: 900;
   font-size: 12px;
   transition: 0.15s ease;
@@ -306,7 +306,7 @@
   border-radius: 999px;
   background: var(--up-soft, #EEF3F8);
   border: 1px solid var(--up-border, #E2E8F0);
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-weight: 900;
   font-size: 11px;
 }
@@ -359,13 +359,13 @@
   border-radius: 14px;
   border: 1px solid var(--up-soft, #EEF3F8);
   background: #fff;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-weight: 900;
   font-size: 12px;
   transition: 0.15s ease;
 }
 .unpri-asideLink:hover {
-  border-color: var(--up-primary, #14335C);
+  border-color: var(--up-primary, #3D6EA3);
   box-shadow: 0 12px 22px rgba(16, 24, 40, 0.06);
   transform: translateY(-1px);
 }
@@ -385,7 +385,7 @@
   font-size: 12px;
   border: 1px solid var(--up-border, #E2E8F0);
   background: #fff;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   transition: 0.15s ease;
 }
 .unpri-miniBtn:hover {
@@ -424,7 +424,7 @@
   align-items: center;
   justify-content: center;
   font-weight: 900;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   overflow: hidden;
 }
 .unpri-avatar img {
@@ -578,7 +578,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 17px;
 }
 .unpri-collapseRight {
@@ -595,7 +595,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   transition: transform 0.18s ease;
 }
 .unpri-collapseBtn[aria-expanded="true"] .unpri-collapseChevron {
@@ -608,21 +608,21 @@
   will-change: max-height;
 }
 .unpri-card .unpri-btn--ghost {
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   background: var(--up-soft, #EEF3F8);
   border-color: var(--up-border, #E2E8F0);
 }
 .unpri-card .unpri-btn--ghost:hover {
   color: #fff;
-  background: var(--up-primary, #14335C);
-  border-color: var(--up-primary, #14335C);
+  background: var(--up-btn, #14335C);
+  border-color: var(--up-btn, #14335C);
 }
 .program-footer {
   color: #fff;
   background: linear-gradient(
     135deg,
-    var(--up-deep, #0A1B30),
-    var(--up-primary, #14335C)
+    var(--up-deep, #2C5580),
+    var(--up-primary, #3D6EA3)
   );
   border-top: 5px solid var(--up-accent, #C79A3D);
 }
@@ -680,7 +680,7 @@
   font-weight: 800;
 }
 .program-footer__navigation a:hover {
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   background: var(--up-accent, #C79A3D);
   border-color: var(--up-accent, #C79A3D);
 }
@@ -869,14 +869,14 @@
   display: block;
   margin-bottom: 8px;
   font-size: 22px;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 20px;
   line-height: 1;
 }
 .info-label {
   display: block;
   margin-bottom: 6px;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 0.4px;
@@ -919,19 +919,19 @@
 }
 .unpri-nav a.is-active {
   color: #fff;
-  background: var(--up-primary, #14335C);
-  border-color: var(--up-primary, #14335C);
+  background: var(--up-primary, #3D6EA3);
+  border-color: var(--up-primary, #3D6EA3);
 }
 .unpri-nav a.unpri-nav__apply {
   margin-left: auto;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   background: #fff;
   border-color: var(--up-border, #E2E8F0);
 }
 .unpri-nav a.unpri-nav__apply:hover {
   color: #fff;
-  background: var(--up-primary, #14335C);
-  border-color: var(--up-primary, #14335C);
+  background: var(--up-btn, #14335C);
+  border-color: var(--up-btn, #14335C);
 }
 
 /* --------------------------------------------------------------------------
@@ -939,14 +939,14 @@
    -------------------------------------------------------------------------- */
 .unpri-sectionTitle {
   margin: 0 0 12px;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 20px;
   font-weight: 900;
   letter-spacing: -0.2px;
 }
 .unpri-kicker {
   margin: 0 0 8px;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 0.5px;
@@ -968,7 +968,7 @@
 }
 .unpri-video__title {
   margin: 0 0 10px;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 13px;
   font-weight: 900;
   letter-spacing: 0.3px;
@@ -1008,7 +1008,7 @@
   width: 62px;
   height: 62px;
   border-radius: 999px;
-  background: var(--up-primary, #14335C);
+  background: var(--up-btn, #14335C);
   color: #fff;
   font-size: 30px;
 }
@@ -1033,14 +1033,14 @@
   margin-bottom: 25px;
 }
 .unpri-video--alumni .unpri-video__frame {
-  background: var(--up-deep, #0A1B30);
+  background: var(--up-deep, #2C5580);
 }
 .unpri-video--alumni .unpri-video__empty {
   border-color: rgba(255, 255, 255, 0.28);
 }
 .unpri-video--alumni .unpri-video__play {
   background: var(--up-accent, #C79A3D);
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
 }
 .unpri-video--alumni .unpri-video__caption {
   color: rgba(255, 255, 255, 0.82);
@@ -1072,7 +1072,7 @@
   padding: 0 4px;
 }
 .unpri-stat__num {
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 28px;
   white-space: nowrap;
   font-weight: 900;
@@ -1149,8 +1149,8 @@
   width: 26px;
   height: 26px;
   border-radius: 999px;
-  background: var(--up-primary, #14335C);
-  color: #fff;
+  background: var(--up-soft, #EEF3F8);
+  color: var(--up-primary, #3D6EA3);
   font-size: 12px;
   font-weight: 900;
 }
@@ -1172,7 +1172,7 @@
   padding: 0 12px;
   border: 1px solid transparent;
   border-radius: 999px;
-  background: var(--up-primary, #14335C);
+  background: var(--up-primary, #3D6EA3);
   color: #fff;
   font-size: 11px;
   font-weight: 900;
@@ -1182,7 +1182,7 @@
 .unpri-badge--outline {
   background: var(--up-soft, #EEF3F8);
   border-color: var(--up-border, #E2E8F0);
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
 }
 .unpri-badge--sm {
   height: 20px;
@@ -1221,7 +1221,7 @@
   transition: 0.16s ease;
 }
 .unpri-con:hover {
-  border-color: var(--up-primary, #14335C);
+  border-color: var(--up-primary, #3D6EA3);
   transform: translateY(-2px);
 }
 .unpri-con__img {
@@ -1260,7 +1260,7 @@
   margin-bottom: 12px;
 }
 .unpri-ul li::marker {
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
 }
 .unpri-card__body .unpri-ul li {
   color: var(--up-muted, #6B7785);
@@ -1328,7 +1328,7 @@
   border: 1px solid var(--up-border, #E2E8F0);
   border-radius: 999px;
   background: var(--up-soft, #EEF3F8);
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 11px;
   font-weight: 800;
 }
@@ -1383,7 +1383,7 @@ position: relative;
   border: 1px solid var(--up-border, #E2E8F0);
   border-radius: 20px;
   background: var(--up-soft, #EEF3F8);
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 18px;           
   font-style: normal;
   font-weight: 900;
@@ -1456,7 +1456,7 @@ position: relative;
   transition: 0.16s ease;
 }
 .unpri-newsCard:hover {
-  border-color: var(--up-primary, #14335C);
+  border-color: var(--up-primary, #3D6EA3);
   transform: translateY(-2px);
 }
 .unpri-newsCard__img {
@@ -1475,7 +1475,7 @@ position: relative;
 }
 .unpri-newsDate {
   margin: 0 0 6px;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 11px;
   font-weight: 900;
   letter-spacing: 0.7px;
@@ -1500,7 +1500,7 @@ position: relative;
   padding-top: 12px;
   border-top: 1px dashed var(--up-border, #E2E8F0);
   width: 100%;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 13px;
   font-weight: 900;
 }
@@ -1583,7 +1583,7 @@ position: relative;
   outline: none;
 }
 .unpri-findCard__search input:focus {
-  border-color: var(--up-primary, #14335C);
+  border-color: var(--up-primary, #3D6EA3);
   box-shadow: 0 0 0 3px var(--up-soft, #EEF3F8);
 }
 .unpri-findGrid {
@@ -1601,7 +1601,7 @@ position: relative;
   transition: 0.15s ease;
 }
 .unpri-findTile:hover {
-  border-color: var(--up-primary, #14335C);
+  border-color: var(--up-primary, #3D6EA3);
   transform: translateY(-2px);
 }
 .unpri-findTile p {
@@ -1619,7 +1619,10 @@ position: relative;
   position: relative;
   overflow: hidden;
   padding: 96px 0 104px;
-  background: var(--up-deep, #0A1B30);
+  /* Deliberately not tied to --up-deep: this full-width band keeps its
+     own solid dark navy (matching the footer) even though --up-deep is
+     now a lighter accent used elsewhere on the page. */
+  background: #0A1B30;
 }
 /* Soft lighter circle bleeding off the bottom-right, as on the faculty page. */
 .unpri-cta::after {
@@ -1630,8 +1633,8 @@ position: relative;
   width: 760px;
   height: 760px;
   border-radius: 999px;
-  background: var(--up-primary, #14335C);
-  opacity: 0.55;
+  background: var(--up-soft, #EEF3F8);
+  opacity: 0.12;
   pointer-events: none;
 }
 .unpri-cta__inner {
@@ -1677,7 +1680,7 @@ position: relative;
   border: 1.5px solid #fff;
   border-radius: 999px;
   background: #fff;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 16px;
   font-weight: 900;
   white-space: nowrap;
@@ -1687,7 +1690,7 @@ position: relative;
 .unpri-cta__btn:hover {
   border-color: var(--up-accent, #C79A3D);
   background: var(--up-accent, #C79A3D);
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   transform: translateY(-1px);
 }
 
@@ -2165,7 +2168,7 @@ position: relative;
 }
 .unpri-docHead__ttl {
   margin: 0 0 6px;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 18px;
   font-weight: 900;
   letter-spacing: -0.2px;
@@ -2238,7 +2241,7 @@ position: relative;
 }
 .unpri-docCard__date {
   margin: 8px 0 0;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 11px;
   font-weight: 900;
   letter-spacing: 0.6px;
@@ -2263,7 +2266,7 @@ position: relative;
 
 .unpri-blockSub {
   margin: -4px 0 12px;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 0.6px;
@@ -2295,13 +2298,13 @@ position: relative;
 .unpri-def {
   padding: 15px 17px;
   border: 1px solid var(--up-border, #E2E8F0);
-  border-left: 3px solid var(--up-primary, #14335C);
+  border-left: 3px solid var(--up-primary, #3D6EA3);
   border-radius: 14px;
   background: #fff;
 }
 .unpri-def__ttl {
   margin: 0 0 6px;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 14px;
   font-weight: 900;
   line-height: 1.35;
@@ -2345,7 +2348,7 @@ position: relative;
 }
 .unpri-whyCard:hover {
   transform: scale(1.02);
-  border-color: var(--up-primary, #14335C);
+  border-color: var(--up-primary, #3D6EA3);
   box-shadow: 0 16px 30px rgba(36, 4, 55, 0.1);
 }
 
@@ -2359,8 +2362,8 @@ position: relative;
   width: 32px;
   height: 32px;
   border-radius: 999px;
-  background: var(--up-primary, #14335C);
-  color: #fff;
+  background: var(--up-soft, #EEF3F8);
+  color: var(--up-primary, #3D6EA3);
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.4px;
@@ -2416,13 +2419,13 @@ position: relative;
   transform: scale(1.05);
 }
 .unpri-whyCard__icon {
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 36px;
   line-height: 1;
 }
 .unpri-whyCard__ttl {
   margin: 0;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   text-align: center;
   font-size: 14px;
   font-weight: 700;
@@ -2546,7 +2549,7 @@ position: relative;
 }
 .unpri-sambutan__name {
   margin: 0;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 14px;
   font-weight: 900;
   line-height: 1.4;
@@ -2584,13 +2587,13 @@ position: relative;
   margin-bottom: 10px;
   border-radius: 999px;
   background: var(--up-soft, #EEF3F8);
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 12px;
   font-weight: 900;
 }
 .unpri-value__ttl {
   margin: 0 0 6px;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 14px;
   font-weight: 900;
   line-height: 1.35;
@@ -2623,7 +2626,7 @@ position: relative;
   margin: 0;
 }
 .unpri-akredBand__label {
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 22px;
   font-weight: 900;
   letter-spacing: 0.4px;
@@ -2634,7 +2637,7 @@ position: relative;
   font-weight: 900;
 }
 .unpri-akredBand__value {
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 26px;
   font-weight: 900;
   letter-spacing: -0.2px;
@@ -2659,7 +2662,7 @@ position: relative;
 }
 .unpri-akredSub {
   margin: 24px 0 12px;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   text-align: center;
   font-size: 17px;
   font-weight: 900;
@@ -2682,7 +2685,7 @@ position: relative;
 }
 .unpri-cert:hover {
   transform: translateY(-2px);
-  border-color: var(--up-primary, #14335C);
+  border-color: var(--up-primary, #3D6EA3);
 }
 .unpri-cert__frame {
   display: flex;
@@ -2709,7 +2712,7 @@ position: relative;
 }
 .unpri-cert__ttl {
   display: block;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 13px;
   font-weight: 900;
   line-height: 1.4;
@@ -2724,7 +2727,7 @@ position: relative;
 .unpri-cert__year {
   display: block;
   margin-top: 6px;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 11px;
   font-weight: 900;
   letter-spacing: 0.6px;
@@ -2772,7 +2775,7 @@ position: relative;
   text-transform: uppercase;
 }
 .unpri-orgItem__name {
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 14px;
   font-weight: 900;
 }
@@ -2780,7 +2783,7 @@ position: relative;
 /* --- career cards --------------------------------------------------------- */
 .unpri-careerTagline {
   margin: 0 0 12px;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 15px;
   font-weight: 900;
   line-height: 1.5;
@@ -2821,7 +2824,7 @@ position: relative;
 }
 .unpri-careerCard__ph {
   position: absolute;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   opacity: 0.22;
   font-size: 40px;
   line-height: 1;
@@ -2834,7 +2837,7 @@ position: relative;
 }
 .unpri-careerCard:hover {
   transform: translateY(-2px);
-  border-color: var(--up-primary, #14335C);
+  border-color: var(--up-primary, #3D6EA3);
   box-shadow: 0 16px 32px rgba(36, 4, 55, 0.09);
 }
 .unpri-careerCard__num {
@@ -2845,14 +2848,14 @@ position: relative;
   height: 32px;
   margin-bottom: 12px;
   border-radius: 12px;
-  background: var(--up-primary, #14335C);
-  color: #fff;
+  background: var(--up-soft, #EEF3F8);
+  color: var(--up-primary, #3D6EA3);
   font-size: 13px;
   font-weight: 900;
 }
 .unpri-careerCard__ttl {
   margin: 0 0 8px;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 15px;
   font-weight: 900;
   line-height: 1.4;
@@ -2867,7 +2870,7 @@ position: relative;
   margin: auto 0 8px;
   padding-top: 12px;
   border-top: 1px dashed var(--up-border, #E2E8F0);
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 11px;
   font-weight: 900;
   letter-spacing: 1px;
@@ -2937,7 +2940,7 @@ position: relative;
 }
 .unpri-tile__ph {
   position: absolute;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   opacity: 0.2;
   font-size: 38px;
   line-height: 1;
@@ -2947,7 +2950,7 @@ position: relative;
 }
 .unpri-tile__ttl {
   margin: 0;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 14.5px;
   font-weight: 700;
   line-height: 1.45;
@@ -2988,7 +2991,7 @@ position: relative;
   transition: 0.15s ease;
 }
 .unpri-faqItem[open] {
-  border-color: var(--up-primary, #14335C);
+  border-color: var(--up-primary, #3D6EA3);
   box-shadow: 0 12px 26px rgba(36, 4, 55, 0.06);
 }
 .unpri-faqQ {
@@ -2998,7 +3001,7 @@ position: relative;
   padding: 15px 17px;
   cursor: pointer;
   list-style: none;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 14px;
   font-weight: 900;
   line-height: 1.5;
@@ -3018,7 +3021,7 @@ position: relative;
   height: 26px;
   border-radius: 9px;
   background: var(--up-soft, #EEF3F8);
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 16px;
 }
 .unpri-faqQ__text {
@@ -3029,7 +3032,7 @@ position: relative;
   width: 9px;
   height: 9px;
   margin-top: 8px;
-  border: solid var(--up-primary, #14335C);
+  border: solid var(--up-primary, #3D6EA3);
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
   transition: transform 0.18s ease;
@@ -3112,7 +3115,7 @@ position: relative;
 }
 .unpri-alumniCard:hover {
   transform: translateY(-2px);
-  border-color: var(--up-primary, #14335C);
+  border-color: var(--up-primary, #3D6EA3);
   box-shadow: 0 16px 32px rgba(36, 4, 55, 0.09);
 }
 .unpri-alumniCard__photo {
@@ -3135,7 +3138,7 @@ position: relative;
 }
 .unpri-alumniCard__ph {
   position: absolute;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   opacity: 0.22;
   font-size: 44px;
   line-height: 1;
@@ -3148,14 +3151,14 @@ position: relative;
 }
 .unpri-alumniCard__name {
   margin: 0;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 15px;
   font-weight: 900;
   line-height: 1.4;
 }
 .unpri-alumniCard__role {
   margin: 4px 0 0;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 0.6px;
@@ -3248,7 +3251,7 @@ position: relative;
 }
 a.unpri-dosenCard:hover {
   transform: translateY(-2px);
-  border-color: var(--up-primary, #14335C);
+  border-color: var(--up-primary, #3D6EA3);
   box-shadow: 0 16px 30px rgba(36, 4, 55, 0.1);
 }
 .unpri-dosenCard__head {
@@ -3265,7 +3268,7 @@ a.unpri-dosenCard:hover {
 }
 .unpri-dosenCard__name {
   margin: 0;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 14.5px;
   font-weight: 900;
   line-height: 1.4;
@@ -3337,22 +3340,22 @@ a.unpri-dosenCard:hover {
    Scoped to .unpri-hero so the same classes keep their existing look in the
    Berita card and the "Lihat Semua Program" link. ------------------------- */
 .unpri-hero .unpri-btn--gold {
-  background: var(--up-primary, #14335C);
+  background: var(--up-btn, #14335C);
   color: #fff;
   box-shadow: 0 12px 26px rgba(36, 4, 55, 0.18);
 }
 .unpri-hero .unpri-btn--gold:hover {
-  background: var(--up-primary-dark, #0D2440);
+  background: var(--up-btn-dark, #0D2440);
   filter: none;
 }
 .unpri-hero .unpri-btn--ghost {
   background: #fff;
   border-color: var(--up-border, #E2E8F0);
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
 }
 .unpri-hero .unpri-btn--ghost:hover {
   background: var(--up-soft, #EEF3F8);
-  border-color: var(--up-primary, #14335C);
+  border-color: var(--up-primary, #3D6EA3);
 }
 
 
@@ -3383,7 +3386,7 @@ a.unpri-dosenCard:hover {
   border-left: 0;
 }
 .unpri-factItem__num {
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 24px;
   font-weight: 900;
   letter-spacing: -0.4px;
@@ -3489,8 +3492,8 @@ a.unpri-dosenCard:hover {
   width: 40px;
   height: 40px;
   border-radius: 999px;
-  background: var(--up-primary, #14335C);
-  color: #fff;
+  background: var(--up-soft, #EEF3F8);
+  color: var(--up-primary, #3D6EA3);
   font-size: 14px;
   font-weight: 900;
 }
@@ -3499,14 +3502,14 @@ a.unpri-dosenCard:hover {
 }
 .unpri-stage__ttl {
   margin: 0;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 16px;
   font-weight: 900;
   line-height: 1.35;
 }
 .unpri-stage__tagline {
   margin: 5px 0 10px;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 13px;
   font-weight: 800;
   font-style: italic;
@@ -3557,7 +3560,7 @@ a.unpri-dosenCard:hover {
   gap: 2px;
   padding: 14px 16px;
   border: 1px solid var(--up-border, #E2E8F0);
-  border-top: 3px solid var(--up-primary, #14335C);
+  border-top: 3px solid var(--up-primary, #3D6EA3);
   border-radius: 12px;
   background: #fff;
 }
@@ -3569,7 +3572,7 @@ a.unpri-dosenCard:hover {
   text-transform: uppercase;
 }
 .unpri-sks__num {
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 24px;
   font-weight: 900;
   line-height: 1.15;
@@ -3582,7 +3585,7 @@ a.unpri-dosenCard:hover {
   letter-spacing: 0.5px;
 }
 .unpri-sks__note {
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 12.5px;
   font-weight: 700;
 }
@@ -3607,7 +3610,7 @@ a.unpri-dosenCard:hover {
 }
 .unpri-matrix thead th {
   background: var(--up-soft, #EEF3F8);
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 11px;
   font-weight: 900;
   letter-spacing: 0.6px;
@@ -3624,7 +3627,7 @@ a.unpri-dosenCard:hover {
 }
 .unpri-matrix__name strong {
   display: block;
-  color: var(--up-deep, #0A1B30) !important;
+  color: var(--up-deep, #2C5580) !important;
   font-size: 13.5px;
   font-weight: 900;
   line-height: 1.35;
@@ -3641,13 +3644,13 @@ a.unpri-dosenCard:hover {
   color: var(--up-border, #E2E8F0);
 }
 .unpri-matrix__total {
-  color: var(--up-primary, #14335C) !important;
+  color: var(--up-primary, #3D6EA3) !important;
   font-weight: 900 !important;
 }
 .unpri-matrix tfoot td {
   border-bottom: 0;
   background: var(--up-surface, #FFFFFF);
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-weight: 900;
 }
 .unpri-matrix tfoot td:first-child {
@@ -3668,7 +3671,7 @@ a.unpri-dosenCard:hover {
   border: 1px solid var(--up-border, #E2E8F0);
   border-radius: 999px;
   background: var(--up-soft, #EEF3F8);
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 12.5px;
   font-weight: 800;
   line-height: 1.4;
@@ -3679,7 +3682,7 @@ a.unpri-dosenCard:hover {
   margin: 16px 0 0;
   padding-top: 14px;
   border-top: 1px dashed var(--up-border, #E2E8F0);
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 14px;
   font-weight: 800;
   line-height: 1.7;
@@ -3693,7 +3696,7 @@ a.unpri-dosenCard:hover {
 }
 .unpri-closingBox h4 {
   margin: 0 0 8px;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 16px;
   font-weight: 900;
   line-height: 1.4;
@@ -3717,7 +3720,7 @@ a.unpri-dosenCard:hover {
   padding: 14px;
   border: 0;
   border-radius: 22px;
-  background: linear-gradient(160deg, var(--up-primary, #14335C), var(--up-deep, #0A1B30));
+  background: linear-gradient(160deg, var(--up-primary, #3D6EA3), var(--up-deep, #2C5580));
   box-shadow: 0 18px 40px rgba(11, 26, 27, 0.22);
 }
 .unpri-video--full .unpri-video__player,
@@ -3755,7 +3758,7 @@ a.unpri-dosenCard:hover {
 }
 .unpri-videoCard:hover {
   transform: translateY(-2px);
-  border-color: var(--up-primary, #14335C);
+  border-color: var(--up-primary, #3D6EA3);
   box-shadow: 0 16px 30px rgba(36, 4, 55, 0.1);
 }
 /* Thumbnail: a still image with a round play button over it. When the card
@@ -3841,7 +3844,7 @@ a.unpri-dosenCard:hover {
   padding-left: 3px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.94);
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 22px;
   box-shadow: 0 10px 24px rgba(36, 4, 55, 0.22);
   transition: transform 220ms cubic-bezier(0.22, 0.75, 0.3, 1),
@@ -3849,7 +3852,7 @@ a.unpri-dosenCard:hover {
 }
 .unpri-videoCard:hover .unpri-videoCard__frame.is-playable .unpri-videoCard__play {
   transform: scale(1.08);
-  background: var(--up-primary, #14335C);
+  background: var(--up-btn, #14335C);
   color: #fff;
 }
 .unpri-videoCard__frame .unpri-video__player {
@@ -3875,7 +3878,7 @@ a.unpri-dosenCard:hover {
 }
 .unpri-videoCard__ttl {
   margin: 0;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 15px;
   font-weight: 800;
   line-height: 1.4;
@@ -3913,7 +3916,7 @@ a.unpri-dosenCard:hover {
    Centred, a step up from body text but below the card titles. */
 .unpri-rosterTitle {
   margin: 0 0 14px;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   text-align: center;
   font-size: 18px;
   font-weight: 900;
@@ -3964,7 +3967,7 @@ a.unpri-dosenCard:hover {
   gap: 12px;
   align-items: center;
   margin: 0 0 14px;
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   font-size: 12.5px;
   font-weight: 900;
   letter-spacing: 0.8px;
@@ -3995,7 +3998,7 @@ a.unpri-dosenCard:hover {
 }
 a.unpri-person:hover {
   transform: translateY(-2px);
-  border-color: var(--up-primary, #14335C);
+  border-color: var(--up-primary, #3D6EA3);
   box-shadow: 0 16px 30px rgba(36, 4, 55, 0.1);
 }
 .unpri-person__photo {
@@ -4017,7 +4020,7 @@ a.unpri-person:hover {
   object-position: center 18%;
 }
 .unpri-person__ph {
-  color: var(--up-primary, #14335C);
+  color: var(--up-primary, #3D6EA3);
   opacity: 0.22;
   font-size: 40px;
   line-height: 1;
@@ -4028,7 +4031,7 @@ a.unpri-person:hover {
 }
 .unpri-person__name {
   margin: 0;
-  color: var(--up-deep, #0A1B30);
+  color: var(--up-deep, #2C5580);
   font-size: 13px;
   font-weight: 800;
   line-height: 1.45;
