@@ -1,16 +1,7 @@
-/* RGB triplets for the hero wash. Declared here as well as inline on
-   .unpri-pshow in index.html, so the gradient still resolves if a build ships
-   without the inline copy. Keep in sync with --up-soft / --up-surface. */
 .unpri-pshow {
   --up-soft-rgb: 238, 243, 248;
   --up-surface-rgb: 244, 248, 251;
   color: var(--up-ink, #07243F);
-  /* Plain base - no pattern here. The page background is nearly white, and
-     the hero photo overlaps this element along an irregular edge (the
-     floating info-card), so a pattern painted at this level shows through
-     as a stray strip wherever that overlap doesn't quite line up. The gold
-     sparkle instead lives on the self-contained blue cards below
-     (.unpri-akredBand, .unpri-closingBox) where it can't leak. */
   background: var(--up-surface, #F4F8FB);
 }
 .unpri-pshow * {
@@ -19,10 +10,6 @@
 .unpri-pshow a {
   text-decoration: none;
 }
-/* Light hero: a pale purple wash sits over the photograph, heaviest on the
-   left where the copy is and thinning out to the right. The rgba() stops use
-   --up-soft-rgb / --up-surface-rgb, the RGB triplets declared alongside the
-   palette on .unpri-pshow, so the wash still follows the programme colour. */
 .unpri-hero {
   position: relative;
   min-height: 560px;
@@ -32,11 +19,6 @@
   color: var(--up-ink, #07243F);
   background: var(--up-soft, #EEF3F8);
 }
-/* No transform here. .unpri-hero is overflow:visible further down (so the
-   info card can hang past its bottom edge), which means a scaled background
-   is NOT clipped - it spilled a few pixels past the hero on every side, and
-   that spill was the strip of bare photo showing along the edges. Background
-   and overlay now occupy exactly the same box. */
 .unpri-hero__bg {
   position: absolute;
   inset: 0;
@@ -47,15 +29,8 @@
 }
 .unpri-hero__overlay {
   position: absolute;
-  /* Same box as .unpri-hero__bg above, which is what guarantees full
-     coverage - the hero does not clip, so this must not overhang either. */
   inset: 0;
   z-index: 1;
-  /* Three stacked layers, painted front to back:
-     1. the horizontal wash - opaque behind the copy, clearing to the right
-     2. a vertical wash so the top and bottom edges never show raw photo
-     3. a flat veil across the entire frame, so no pixel is left untouched
-        (this is what stops the image peeking through at the far edges) */
   background: linear-gradient(
       90deg,
       rgba(var(--up-soft-rgb, 238, 243, 248), 0.97) 0%,
@@ -202,20 +177,13 @@
   text-overflow: ellipsis;
 }
 .unpri-body {
-  /* The page's actual visible base (every tab panel sits on this, not on
-     .unpri-pshow directly - .unpri-body is opaque and paints over it) gets
-     a thin gold trellis/veining pattern on the pale-blue base, echoing the
-     marble-and-brass reference. Hero and footer keep their own separate
-     backgrounds untouched. */
-  background: var(--up-surface, #F4F8FB)
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='70'%3E%3Cpath d='M0 70 L70 0 L140 70' fill='none' stroke='%23C79A3D' stroke-width='2.25' stroke-opacity='0.45'/%3E%3C/svg%3E");
+  background: var(--up-surface, #F4F8FB);
+  background-size: 20% auto;
   padding: 24px 0 50px;
 }
 .unpri-card {
   background: #fff;
   border: 1px solid var(--up-border, #E2E8F0);
-  /* Pale blue top edge at rest, gold only on hover - keeps gold as a
-     deliberate hover accent rather than a permanent fixture on every card. */
   border-top: 3px solid var(--up-soft, #EEF3F8);
   border-radius: 14px;
   box-shadow: 0 10px 28px rgba(32, 22, 40, 0.045);
@@ -769,11 +737,6 @@
     justify-content: flex-start;
   }
 }
-/* Below roughly a tablet the copy stops sitting in the left third of the hero
-   and spreads across the photo, so the left-to-right wash no longer lines up
-   with the text. From here down it becomes a vertical white wash instead:
-   plain white rather than the lavender tint, and kept see-through so the
-   photograph still reads underneath the dark purple type. */
 @media (max-width: 991px) {
   .unpri-hero__overlay {
     background: linear-gradient(
@@ -794,8 +757,6 @@
   .unpri-hero__wrap {
     padding: 68px 0 58px;
   }
-  /* Slightly heavier than the tablet wash above, since the copy runs edge
-     to edge here. Still white, still see-through. */
   .unpri-hero__overlay {
     background: linear-gradient(
       180deg,
@@ -841,15 +802,6 @@
   }
 }
 
-
-/* ==========================================================================
-   RESTORED PROGRAM-PAGE STYLES
-   Rebuilt to match the reference screenshots. Everything below was missing.
-   ========================================================================== */
-
-/* --------------------------------------------------------------------------
-   1. HERO INFO CARD (Jenjang / Gelar / Akreditasi / Durasi)
-   -------------------------------------------------------------------------- */
 .unpri-hero {
   overflow: visible;
   padding-bottom: 40px;
@@ -913,9 +865,6 @@
   padding-top: 62px !important;
 }
 
-/* --------------------------------------------------------------------------
-   2. TABS + PANELS
-   -------------------------------------------------------------------------- */
 .unpri-tabPanels {
   position: relative;
 }
@@ -953,9 +902,6 @@
   border-color: var(--up-btn, #14335C);
 }
 
-/* --------------------------------------------------------------------------
-   3. OVERVIEW PANEL — text + gallery, Visi, Misi
-   -------------------------------------------------------------------------- */
 .unpri-sectionTitle {
   position: relative;
   margin: 0 0 20px;
@@ -965,8 +911,6 @@
   font-weight: 900;
   letter-spacing: -0.2px;
 }
-/* Short gold rule under every panel heading - a second, more visible
-   place gold shows up beyond the thin card edges. */
 .unpri-sectionTitle::after {
   content: "";
   position: absolute;
@@ -1127,9 +1071,6 @@
 }
 
 /* Inline SVG icons (replace the missing Pe-icon-7-stroke font). */
-/* Inline SVG icons. Do NOT set fill or stroke here: a CSS declaration beats
-   the fill="none" presentation attribute on the paths and fills every outline
-   icon solid. Colour comes from currentColor on the attributes instead. */
 .unpri-svg {
   display: inline-block;
   vertical-align: -0.125em;
@@ -1194,9 +1135,6 @@
   line-height: 1.8;
 }
 
-/* --------------------------------------------------------------------------
-   4. BADGES / DOTS
-   -------------------------------------------------------------------------- */
 .unpri-badge {
   display: inline-flex;
   align-items: center;
@@ -1230,9 +1168,6 @@
   background: var(--up-accent, #C79A3D);
 }
 
-/* --------------------------------------------------------------------------
-   5. AKADEMIK & KARIER 
-   -------------------------------------------------------------------------- */
 .unpri-cardIntro {
   margin: 0 0 16px;
   color: var(--up-muted, #6B7785);
@@ -1301,9 +1236,6 @@
   line-height: 1.75;
 }
 
-/* --------------------------------------------------------------------------
-   6. PIMPINAN & DOSEN
-   -------------------------------------------------------------------------- */
 .unpri-pmuLead {
   display: flex;
   align-items: center;
@@ -1451,9 +1383,6 @@ position: relative;
   font-weight: 700;
 }
 
-/* --------------------------------------------------------------------------
-   7. BERITA
-   -------------------------------------------------------------------------- */
 .unpri-newsHead {
   display: flex;
   flex-wrap: wrap;
@@ -1541,9 +1470,6 @@ position: relative;
   text-decoration: underline;
 }
 
-/* --------------------------------------------------------------------------
-   8. EMPTY STATE
-   -------------------------------------------------------------------------- */
 .unpri-placeholder {
   display: flex;
   flex-direction: column;
@@ -1561,9 +1487,6 @@ position: relative;
   margin: 0;
 }
 
-/* --------------------------------------------------------------------------
-   9. TEMUKAN PROGRAM STUDI LAINNYA
-   -------------------------------------------------------------------------- */
 .unpri-findCard {
   margin-top: 22px;
   padding: 18px 20px 20px;
@@ -1645,16 +1568,10 @@ position: relative;
   line-height: 1.3;
 }
 
-/* --------------------------------------------------------------------------
-   9b. CTA — AJAKAN MENDAFTAR
-   -------------------------------------------------------------------------- */
 .unpri-cta {
   position: relative;
   overflow: hidden;
   padding: 96px 0 104px;
-  /* Deliberately not tied to --up-deep: this full-width band keeps its
-     own solid dark navy (matching the footer) even though --up-deep is
-     now a lighter accent used elsewhere on the page. */
   background: #0A1B30;
 }
 /* Soft lighter circle bleeding off the bottom-right, as on the faculty page. */
@@ -1727,9 +1644,6 @@ position: relative;
   transform: translateY(-1px);
 }
 
-/* --------------------------------------------------------------------------
-   10. RESPONSIVE
-   -------------------------------------------------------------------------- */
 @media (max-width: 991px) {
   .unpri-vm,
   .unpri-conGrid {
@@ -1811,13 +1725,6 @@ position: relative;
     flex: 1 1 100%;
   }
 }
-/* --------------------------------------------------------------------------
-   11. FALLBACKS FOR MISSING ICON FONTS
-   Untitled-1.css references "Pe-icon-7-stroke" and "fontello" font files that
-   are not shipped with this folder, so their glyphs render as empty boxes.
-   Icons in the markup are inline SVG now; these rules clean up the leftover
-   pseudo-element glyphs in the breadcrumb.
-   -------------------------------------------------------------------------- */
 #position ul li:first-child {
   padding-left: 0;
 }
@@ -1834,23 +1741,6 @@ position: relative;
   content: "";
 }
 
-/* ==========================================================================
-   12. RESPONSIVE LAYER
-   Appended deliberately: everything here is an override that sits after the
-   rules above, so no existing declaration had to be edited. Breakpoints:
-
-     1199px  small desktop / landscape tablet (site navbar drops to 70px)
-      991px  portrait tablet
-      767px  large phone
-      575px  phone
-      400px  small phone
-
-   The site navbar (#usn-header) has its own responsive rules inside
-   index.html and is not touched here.
-   ========================================================================== */
-
-/* Long unbroken strings (URLs, long titles) must not push the page wider
-   than the viewport on narrow screens. */
 .unpri-pshow p,
 .unpri-pshow h1,
 .unpri-pshow h2,
@@ -1869,9 +1759,6 @@ position: relative;
   max-width: 100%;
 }
 
-/* The tab row scrolls sideways rather than squashing. Flex items shrink by
-   default, so without flex-shrink:0 the tabs compress into unreadable slivers
-   instead of triggering the overflow-x already set on .unpri-nav__row. */
 .unpri-nav__row {
   -webkit-overflow-scrolling: touch;
 }
@@ -1901,14 +1788,10 @@ position: relative;
     font-size: 38px;
   }
 
-  /* Konsentrasi keeps two columns here — the container is still 750px wide,
-     so a single column would leave the cards uncomfortably long. */
   .unpri-conGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  /* Five nowrap counts overflow a 750px container, so the strip becomes a
-     grid and the separators are dropped. */
   .unpri-stats {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1980,8 +1863,6 @@ position: relative;
     gap: 10px;
   }
 
-  /* Counts: two per row, and labels are allowed to wrap because
-     "Tenaga Kependidikan" cannot fit a ~150px cell on one line. */
   .unpri-stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     padding: 18px;
@@ -2087,19 +1968,6 @@ position: relative;
   }
 }
 
-/* --------------------------------------------------------------------------
-   12b. INFO CARD — RESPONSIVE GRID
-   The desktop layout is one flex row with <span class="divider"> elements
-   between the items. Below 991px that fell back to flex-wrap with
-   flex: 1 1 45%, which stretched the cells unevenly and dropped every rule
-   line, leaving four values floating with no structure.
-
-   Here the card becomes a real grid instead. The separators are drawn with a
-   1px gap over a coloured card background rather than by the .divider spans
-   (which stay display:none), so rules appear between every neighbouring cell
-   automatically at both 2 and 1 column — no :nth-child bookkeeping, and
-   nothing to adjust if the number of items ever changes.
-   -------------------------------------------------------------------------- */
 @media (max-width: 991px) {
   .info-card {
     display: grid;
@@ -2128,23 +1996,6 @@ position: relative;
   }
 }
 
-/* --------------------------------------------------------------------------
-   12c. INFO CARD PLACEMENT — hero overlap on desktop/tablet, below on phones
-
-   The card now sits AFTER </section class="unpri-hero"> in index.html rather
-   than inside it. That matters: .unpri-hero is display:flex, so while the card
-   lived inside it, dropping position:absolute at 991px turned the card into a
-   flex item of the hero and it got laid out beside the hero content. That is
-   what looked cramped and forced — no amount of padding could fix it, because
-   the card was in the wrong formatting context.
-
-   As a sibling it is a normal block, so placement is just margin:
-     >= 768px  negative top margin lifts it into the bottom of the hero
-     <  768px  positive margin, fully clear of the hero
-
-   This also retires the old bottom:-36px / breadcrumb padding-top:62px pair,
-   which had to be kept in sync by hand.
-   -------------------------------------------------------------------------- */
 .info-card {
   position: relative;
   z-index: 4;
@@ -2155,15 +2006,11 @@ position: relative;
   margin: -80px auto 0;
 }
 
-/* The card is in normal flow now, so the breadcrumb no longer has to reserve
-   room for an overhang. */
 #position .container > ul {
   padding-top: 26px !important;
 }
 
 @media (max-width: 991px) {
-  /* Still overlapping the hero, just a shallower bite since the card is
-     taller here (two rows instead of one). */
   .unpri-hero {
     padding-bottom: 40px;
   }
@@ -2186,13 +2033,6 @@ position: relative;
   }
 }
 
-/* --------------------------------------------------------------------------
-   13. MITRA — DOKUMENTASI KEGIATAN
-   A band of video cards above the logo grid, built from any partner in
-   partners.json that carries a "video" key. Remove the key and its card goes;
-   remove them all and the whole band disappears, leaving the logo grid as it
-   was. Nothing here needs to know how many videos exist.
-   -------------------------------------------------------------------------- */
 .unpri-partnerDocs {
   margin-bottom: 30px;
 }
@@ -2220,9 +2060,6 @@ position: relative;
   line-height: 1.7;
 }
 
-/* auto-fill keeps empty tracks, so one card stays ~350px rather than
-   stretching the full width. Two cards sit side by side, three fill the row,
-   four wrap to a second row. No per-count rules needed. */
 .unpri-docGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -2236,8 +2073,6 @@ position: relative;
   border-radius: 14px;
   background: #fff;
 }
-/* The shared .unpri-video sets a centring margin and a 20/9 frame; inside a
-   card it needs neither. */
 .unpri-docCard__video {
   margin: 0;
 }
@@ -2289,13 +2124,6 @@ position: relative;
     font-size: 16px;
   }
 }
-
-/* ==========================================================================
-   11. SECTION BLOCKS  (Gambaran Umum / Akademik & Karier / Alumni / FAQ ...)
-   Added for the Profesi Dokter content structure. Everything below uses the
-   page palette variables only - no colour is hard-coded outside the var()
-   fallbacks, so the whole block follows --up-* set on .unpri-pshow.
-   ========================================================================== */
 
 .unpri-blockSub {
   margin: -4px 0 12px;
@@ -2355,10 +2183,6 @@ position: relative;
   margin: 8px 0 0;
 }
 
-/* --- keunggulan cards (mengapa memilih kami) ----------------------------
-   Flex rather than grid on purpose: a full row of four fills the width
-   exactly, and a trailing row of one, two or three centres itself instead
-   of hanging on the left. -------------------------------------------------- */
 .unpri-whyGrid {
   display: flex;
   flex-wrap: wrap;
@@ -2401,17 +2225,10 @@ position: relative;
   font-weight: 800;
   letter-spacing: 0.4px;
 }
-/* The ring draws itself around the badge once - head travelling round until
-   it meets the tail - then holds. Retracts the same way on mouse-out.
-   stroke-dasharray is the full circumference (2 x pi x r, r = 20). */
 .unpri-whyCard__ring {
   position: absolute;
   top: 50%;
   left: 50%;
-  /* Sized explicitly rather than by insets: an <svg> is a replaced element,
-     so with width/height:auto it falls back to its intrinsic size instead of
-     stretching to the four insets - which is what threw the ring off centre.
-     max-width:none beats `.unpri-pshow svg { max-width: 100% }`. */
   width: 44px;
   height: 44px;
   max-width: none;
@@ -2473,18 +2290,8 @@ position: relative;
   }
 }
 
-/* --- sambutan ketua program studi ---------------------------------------
-   Structure: .unpri-sambutan is a bare positioning wrapper holding two
-   full-size sheets and then .unpri-sambutan__inner, which carries the
-   background and the actual two-column layout. Ordinary source order puts
-   the sheets behind the letter - no negative z-index, which is what forced
-   the old version to live outside the card as floating strips.
-   -------------------------------------------------------------------------- */
 .unpri-sambutan {
   position: relative;
-  /* Deliberately tight at rest - the card head above already contributes
-     12px. The room the deck needs is opened on hover by the letter dropping
-     down, rather than reserved permanently as a gap. */
   margin-top: 2px;
 }
 
@@ -2498,18 +2305,10 @@ position: relative;
   border-radius: 20px;
   background: var(--up-soft, #EEF3F8);
   opacity: 0;
-  /* at rest each sheet sits exactly under the letter, so the section reads
-     as a single card */
   transform: translateY(0) scaleX(1);
   transition: opacity 320ms ease, transform 440ms cubic-bezier(0.22, 0.75, 0.3, 1);
   pointer-events: none;
 }
-/* scaleX, never scale(): a uniform scale shrinks the height too, which on a
-   card this tall drags the top edge down by roughly the same distance the
-   translate lifts it - the sheets rise and hide behind the card again.
-   Horizontal-only narrowing leaves the vertical offset intact. */
-/* The sheets rise only a little; most of the separation comes from the
-   letter dropping the other way, so the deck opens from the middle. */
 .unpri-sambutan:hover .unpri-sambutan__sheet--near {
   opacity: 1;
   transform: translateY(-2px) scaleX(0.985);
@@ -2534,8 +2333,6 @@ position: relative;
   transition: transform 440ms cubic-bezier(0.22, 0.75, 0.3, 1),
     box-shadow 440ms ease;
 }
-/* the letter drops away from the sheets as they rise - net separation is
-   16px to the near sheet and 24px to the far one */
 .unpri-sambutan:hover .unpri-sambutan__inner {
   transform: translateY(14px);
   box-shadow: 0 18px 36px rgba(36, 4, 55, 0.1);
@@ -2936,9 +2733,6 @@ position: relative;
   background: var(--up-accent, #C79A3D);
 }
 
-/* --- agenda, aktivitas & galeri: masonry board ---------------------------
-   CSS columns rather than grid so tiles of different heights stack without
-   gaps. `--tile-ratio` on each image frame staggers the heights. ---------- */
 .unpri-tileBoard {
   column-count: 3;
   column-gap: 16px;
@@ -3242,8 +3036,6 @@ position: relative;
   font-style: italic;
   line-height: 1.75;
 }
-/* A gold mark rather than gold body copy - keeps the quote itself
-   legible while still giving it its own gold accent. */
 .unpri-alumniCard__quote::before {
   content: "\201C";
   margin-right: 2px;
@@ -3274,10 +3066,6 @@ position: relative;
   }
 }
 
-/* --- dosen tetap cards ----------------------------------------------------
-   Replaces the old horizontal chip strip: each dosen now carries the field
-   set from the "Dosen" form (Nama Lengkap, Gelar Akademik, Sertifikasi,
-   Bidang Ilmu, Fokus Keahlian), which needs a card rather than a chip. ----- */
 .unpri-dosenGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
@@ -3359,16 +3147,12 @@ a.unpri-dosenCard:hover {
   }
 }
 
-/* The alumni data blocks now sit inside the Profil Alumni card, directly
-   under the alumni cards. */
 .unpri-alumniGrid + .unpri-defList {
   margin-top: 18px;
   padding-top: 18px;
   border-top: 1px dashed var(--up-border, #E2E8F0);
 }
 
-/* The "Lihat Semua Berita" button shares the card head row with the title,
-   so it must not stretch or wrap awkwardly on narrow screens. */
 .unpri-cardHead .unpri-btn {
   flex: 0 0 auto;
 }
@@ -3382,9 +3166,6 @@ a.unpri-dosenCard:hover {
   }
 }
 
-/* --- hero buttons on the light wash --------------------------------------
-   Scoped to .unpri-hero so the same classes keep their existing look in the
-   Berita card and the "Lihat Semua Program" link. ------------------------- */
 .unpri-hero .unpri-btn--gold {
   background: var(--up-btn, #14335C);
   color: #fff;
@@ -3404,11 +3185,6 @@ a.unpri-dosenCard:hover {
   border-color: var(--up-primary, #3D6EA3);
 }
 
-
-/* --- facts strip (Gambaran Umum) -----------------------------------------
-   One panel with equal columns and hairline dividers, rather than five
-   separate boxes of different widths - that version looked ragged because
-   each label wraps to a different number of lines. --------------------- */
 .unpri-factStrip {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -3756,11 +3532,6 @@ a.unpri-dosenCard:hover {
   width: 100%;
   margin: 0 0 22px;
 }
-/* A thick brand-coloured frame around the player, like a photo mat, instead
-   of a thin hairline border - this is what actually plays: a local .mp4
-   through the plain <video> tag has no channel name, avatar or upload info
-   anywhere on it, so this look only holds if the source stays a direct file
-   link rather than a YouTube embed. */
 .unpri-video--full .unpri-video__frame {
   aspect-ratio: 16 / 9;
   padding: 14px;
@@ -3774,15 +3545,9 @@ a.unpri-dosenCard:hover {
   border-radius: 12px;
 }
 
-/* --- video grid (Alumni / Temu Pakar / Sarana Prasarana) --------------------
-   Flex rather than grid so a trailing row of one or two videos centres itself
-   instead of hanging on the left (5 alumni videos = 3 + 2). Each card is its
-   own player; clicking the frame plays it in place. ------------------------ */
 .unpri-videoGrid {
   display: flex;
   flex-wrap: wrap;
-  /* top-aligned: once each card takes its video's own shape the heights
-     differ, and stretching them would reintroduce empty padding */
   align-items: flex-start;
   justify-content: center;
   gap: 16px;
@@ -3807,9 +3572,6 @@ a.unpri-dosenCard:hover {
   border-color: var(--up-primary, #3D6EA3);
   box-shadow: 0 16px 30px rgba(36, 4, 55, 0.1);
 }
-/* Thumbnail: a still image with a round play button over it. When the card
-   has a video src the frame is a <button>; clicking swaps it for the player
-   (.is-playing). The button reset below keeps it looking like the image. */
 .unpri-videoCard__frame {
   position: relative;
   display: flex;
@@ -3833,9 +3595,6 @@ a.unpri-dosenCard:hover {
   outline: 3px solid var(--up-accent, #C79A3D);
   outline-offset: -3px;
 }
-/* Every card is the same 16:9 block. No tint over the picture, and no black
-   anywhere: a clip whose shape does not match is padded with the page's soft
-   purple. */
 .unpri-videoCard__frame img,
 .unpri-videoCard__media {
   position: absolute;
@@ -3845,15 +3604,8 @@ a.unpri-dosenCard:hover {
   object-fit: cover;
   background: var(--up-soft, #EEF3F8);
   transition: transform 420ms cubic-bezier(0.22, 0.75, 0.3, 1);
-  /* The legacy theme file (Untitled-1.css) has a bare, unscoped
-     `video { opacity: 0.4; }` rule left over from its old hero
-     background clip. It matches every <video> on the page, including
-     these, and is what actually washed them out - not a gradient.
-     Force it back to fully opaque here. */
   opacity: 1;
 }
-/* The still fills the card; a playing clip is shown whole instead, padded
-   with flat soft purple when its shape does not match the card. */
 .unpri-videoCard__media {
   object-fit: cover;
 }
@@ -3861,8 +3613,6 @@ a.unpri-dosenCard:hover {
 .unpri-videoCard:hover .unpri-videoCard__frame.is-playable .unpri-videoCard__media {
   transform: scale(1.04);
 }
-/* Playing: show the whole frame rather than a cropped one, and stop the
-   hover zoom so the controls stay where the pointer expects them. */
 .unpri-videoCard__frame.is-playing .unpri-videoCard__media {
   object-fit: contain;
   transform: none;
@@ -3871,8 +3621,6 @@ a.unpri-dosenCard:hover {
 .unpri-videoCard__frame.is-playing .unpri-videoCard__media {
   background: var(--up-soft, #EEF3F8);
 }
-/* No scrim over the thumbnail. The play button is a solid white circle with
-   its own shadow, so it reads on any picture without tinting it. */
 .unpri-videoCard__frame.is-playing .unpri-videoCard__play {
   display: none;
 }
@@ -3912,9 +3660,6 @@ a.unpri-dosenCard:hover {
   opacity: 1;
 }
 
-/* The single full-width video (Kurikulum & Karir, Yudisium, etc. via
-   renderVideo) uses this player outside a .unpri-videoCard entirely, so
-   it needs its own guard against the same legacy rule. */
 .unpri-video__player {
   opacity: 1;
 }
@@ -3937,8 +3682,6 @@ a.unpri-dosenCard:hover {
   line-height: 1.6;
 }
 
-/* Two-up variant (Temu Pakar: four videos as a 2x2; Sarana: picture + video
-   side by side). */
 .unpri-videoGrid--2 .unpri-videoCard {
   flex-basis: calc((100% - 16px) / 2);
 }
@@ -3947,8 +3690,6 @@ a.unpri-dosenCard:hover {
   flex-basis: min(620px, 100%);
 }
 
-/* Inside a card the grid follows the narrative, so it needs space above it
-   rather than below. */
 .unpri-card .unpri-videoGrid {
   margin: 20px 0 0;
 }
@@ -3958,8 +3699,6 @@ a.unpri-dosenCard:hover {
   margin-top: 20px;
 }
 
-/* "Dosen Tetap" heading above the roster - replaces the old outline pill.
-   Centred, a step up from body text but below the card titles. */
 .unpri-rosterTitle {
   margin: 0 0 14px;
   color: var(--up-deep, #2C5580);
@@ -3998,10 +3737,6 @@ a.unpri-dosenCard:hover {
   }
 }
 
-/* --- dosen by department ---------------------------------------------------
-   Each department is a small section: a heading with a rule, then a grid of
-   portrait cards. The portraits are ID-photo shaped, so the frame is 3/4 and
-   the image is anchored to the top - heads never get cropped. ------------- */
 .unpri-dept {
   margin-top: 22px;
 }
@@ -4104,10 +3839,6 @@ a.unpri-person:hover {
   }
 }
 
-/* --- picture + video pair (Sarana Prasarana) --------------------------------
-   Two equal media blocks side by side. The caption rides on the image as a
-   small chip instead of a strip underneath, so a picture with no caption
-   does not sit next to a video that has one with mismatched heights. ------ */
 .unpri-videoGrid--media .unpri-videoCard {
   position: relative;
   overflow: hidden;
@@ -4135,4 +3866,52 @@ a.unpri-person:hover {
 /* While it plays the chip would cover the controls. */
 .unpri-videoGrid--media .unpri-videoCard.is-playing .unpri-videoCard__body {
   display: none;
+}
+/* Tab bar */
+.unpri-nav {
+  margin: 0 0 22px;
+  padding: 8px;
+  border: 1px solid var(--up-border, #E2E8F0);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 8px 22px rgba(20, 51, 92, 0.06);
+}
+.unpri-nav__row {
+  gap: 6px;
+  padding-bottom: 0;
+}
+.unpri-nav a {
+  justify-content: center;
+  border-color: transparent;
+  background: transparent;
+}
+.unpri-nav a:hover {
+  background: var(--up-soft, #EEF3F8);
+  transform: none;
+}
+.unpri-nav a.is-active {
+  background: var(--up-primary, #3D6EA3);
+  border-color: var(--up-primary, #3D6EA3);
+}
+@media (min-width: 1200px) {
+  .unpri-nav__row > a {
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 767px) {
+  .unpri-nav {
+    border-radius: 16px;
+  }
+}
+
+/* Fewer, larger peaks on smaller screens */
+@media (max-width: 991px) {
+  .unpri-body {
+    background-size: 33.333% auto;
+  }
+}
+@media (max-width: 575px) {
+  .unpri-body {
+    background-size: 50% auto;
+  }
 }
